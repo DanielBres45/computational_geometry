@@ -1,0 +1,3 @@
+[submodule "AOPLogger"]
+	path = AOPLogger
+	url = git@github.com:DanielBres45/AOPLogger.git
