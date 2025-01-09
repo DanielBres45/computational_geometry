@@ -1,3 +1,6 @@
 [submodule "AOPLogger"]
 	path = AOPLogger
 	url = git@github.com:DanielBres45/AOPLogger.git
+[submodule "MemoryMapping"]
+	path = MemoryMapping
+	url = git@github.com:DanielBres45/MemoryMapping.git

@@ -1,0 +1,12 @@
+[package]
+name = "geometry_project"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+minifb = "0.25.0"
+log_statement = { path = "../AOPLogger/log_statement" }
+time_attribute = { path = "../AOPLogger/time_attribute" }
+logging = { path = "../AOPLogger/logging" }
+data_structures = { path = "../MemoryMapping/data_structures"}
+memory_math = { path = "../MemoryMapping/memory_math"}
