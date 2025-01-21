@@ -13,3 +13,18 @@ impl fmt::Display for Extents2d {
         write!(f, "(Min: {}, Max: {})", self.min, self.max)
     }
 }
+
+impl Extents2d
+{
+    pub fn new_square(size: f32) -> Self
+    {
+        let min: Point2d = Point2d::origin();
+        let max: Point2d = Point2d::new(size, size);
+        
+        Extents2d
+        {
+            min,
+            max
+        }
+    }
+}

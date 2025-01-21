@@ -4,8 +4,8 @@ pub mod entities;
 use minifb::{Key, Window, WindowOptions};
 use std::time::Duration;
 
-pub const WINDOW_WIDTH: usize = 256;
-pub const WINDOW_HEIGHT: usize = 256;
+pub const WINDOW_WIDTH: usize = 512;
+pub const WINDOW_HEIGHT: usize = 512;
 
 fn main() {
     let window = Window::new(
@@ -23,8 +23,9 @@ fn main() {
     window_loop(window, buffer);
 }
 
-fn window_loop(window: Window, buffer: Vec<u32>) {
+fn window_loop(mut window: Window, buffer: Vec<u32>) {
     while window.is_open() && !window.is_key_down(Key::Escape) {
-        std::thread::sleep(Duration::from_millis(1));
+        std::thread::sleep(Duration::from_millis(10));
+        window.update_with_buffer(buffer.as_slice(), WINDOW_WIDTH, WINDOW_HEIGHT).expect("oops");
     }
 }
