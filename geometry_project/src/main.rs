@@ -1,6 +1,10 @@
 pub mod display;
 pub mod entities;
+pub mod numerics;
 
+use data_structures::vec2d::Vec2D;
+use display::{camera::Camera, rgb::RGB};
+use entities::{line2d::Line2D, point2d::Point2d};
 use minifb::{Key, Window, WindowOptions};
 use std::time::Duration;
 
@@ -18,14 +22,36 @@ fn main() {
         panic!("{}", e);
     });
 
-    let buffer: Vec<u32> = vec![0; WINDOW_WIDTH * WINDOW_HEIGHT];
+    let mut buffer: Vec2D<RGB> = Vec2D::new_from_flatpack(
+        vec![RGB::black(); WINDOW_WIDTH * WINDOW_HEIGHT],
+        WINDOW_WIDTH,
+        WINDOW_HEIGHT,
+    )
+    .expect("width height unexpected");
 
     window_loop(window, buffer);
 }
 
-fn window_loop(mut window: Window, buffer: Vec<u32>) {
+fn window_loop(mut window: Window, mut buffer: Vec2D<RGB>) {
+    let mut camera: Camera = Camera::new(100f32, 100f32);
+
+    camera.push_point(Point2d { x: 50f32, y: 50f32 });
+
+    camera.push_line(Line2D::new(
+        Point2d { x: 25f32, y: 25f32 },
+        Point2d { x: 75f32, y: 75f32 },
+    ));
+
     while window.is_open() && !window.is_key_down(Key::Escape) {
-        std::thread::sleep(Duration::from_millis(10));
-        window.update_with_buffer(buffer.as_slice(), WINDOW_WIDTH, WINDOW_HEIGHT).expect("oops");
+        std::thread::sleep(Duration::from_millis(1));
+
+        camera.draw(&mut buffer);
+        buffer_to_window(&mut window, buffer.clone());
     }
+}
+
+fn buffer_to_window(window: &mut Window, buffer2d: Vec2D<RGB>) {
+    let buffer: Vec<u32> = buffer2d.into_iter().map(|r| r.value).collect();
+
+    window.update_with_buffer(buffer.as_slice(), WINDOW_WIDTH, WINDOW_HEIGHT);
 }

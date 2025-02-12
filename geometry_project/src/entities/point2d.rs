@@ -1,4 +1,10 @@
-use std::fmt;
+use crate::entities::affine_matrix2d::Column;
+use std::{
+    fmt,
+    ops::{Mul, Sub},
+};
+
+use super::{affine_matrix2d::Matrix2D, vect2d::Vector2D};
 
 #[derive(Copy, Clone, Debug)]
 pub struct Point2d {
@@ -12,15 +18,46 @@ impl fmt::Display for Point2d {
     }
 }
 
-impl Point2d
-{
-    pub fn origin() -> Self
-    {
-        Point2d { x: 0f32, y: 0f32 }
+impl Into<Column> for Point2d {
+    fn into(self) -> Column {
+        Column {
+            r1: self.x,
+            r2: self.y,
+            r3: 1f32,
+        }
     }
+}
 
-    pub fn new(x: f32, y: f32) -> Self
-    {
-        Point2d{x, y}
+impl From<Column> for Point2d {
+    fn from(value: Column) -> Self {
+        Point2d {
+            x: value.r1,
+            y: value.r2,
+        }
+    }
+}
+
+impl Sub<Point2d> for Point2d {
+    type Output = Vector2D;
+    fn sub(self, rhs: Point2d) -> Self::Output {
+        Vector2D {
+            x: self.x - rhs.x,
+            y: self.y - rhs.y,
+        }
+    }
+}
+
+impl Mul<Matrix2D> for Point2d {
+    type Output = Point2d;
+
+    fn mul(self, rhs: Matrix2D) -> Self::Output {
+        let col: Column = self.into();
+        (col * rhs).into()
+    }
+}
+
+impl Point2d {
+    pub fn origin() -> Self {
+        Point2d { x: 0f32, y: 0f32 }
     }
 }
