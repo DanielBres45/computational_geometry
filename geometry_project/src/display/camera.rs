@@ -2,12 +2,18 @@ use core::panic;
 
 use crate::display::rgb::RGB;
 use crate::entities::affine_matrix2d::Matrix2D;
+use crate::entities::algorithms;
 use crate::entities::rectangle2d::Rectangle2D;
 use crate::entities::vect2d::Vector2D;
 use crate::entities::{line2d::Line2D, point2d::Point2d};
+use crate::numerics::floating_comparisons::approx_equal;
+
+use log_statement::def_log;
 
 use data_structures::vec2d::Vec2D;
 use memory_math::memory_index2d::MemIndex2D;
+
+use super::bresnehem::BresnehemIter;
 
 pub struct Camera {
     pub view_port: Rectangle2D,
@@ -16,6 +22,8 @@ pub struct Camera {
     point_colors: Vec<RGB>,
     line_colors: Vec<RGB>,
 }
+
+def_log!(Camera);
 
 impl Camera {
     pub fn new(width: f32, height: f32) -> Self {
@@ -44,6 +52,43 @@ impl Camera {
         MemIndex2D::new(row, col)
     }
 
+    fn clip_line(&self, line: Line2D) -> Option<Line2D> {
+        algorithms::liang_barsky_clip(self.view_port, line)
+    }
+
+    fn draw_line(&self, line: Line2D, canvas: &mut Vec2D<RGB>) {
+        let iter: BresnehemIter = line.into();
+
+        for point in iter {
+            if canvas.index2d_in_bounds(point) {
+                canvas[point] = RGB::red();
+            }
+        }
+    }
+
+    fn draw_lines(&self, canvas: &mut Vec2D<RGB>, skew: Matrix2D) {
+        for line in &self.lines {
+            camera_log!("Draw line at {}", line);
+            let clipped: Line2D = match self.clip_line(line.to_owned()) {
+                Some(l) => l,
+                None => {
+                    camera_log!("not in view!");
+                    continue;
+                }
+            };
+
+            camera_log!("Line after clipping: {}", clipped);
+
+            if approx_equal(clipped.len(), 0f32, f32::EPSILON) {
+                continue;
+            }
+
+            let scaled_line: Line2D = clipped * skew;
+
+            self.draw_line(scaled_line, canvas);
+        }
+    }
+
     pub fn draw(&self, canvas: &mut Vec2D<RGB>) {
         let scale: Vector2D = Vector2D {
             x: canvas.width() as f32 / self.view_port.width(),
@@ -61,6 +106,8 @@ impl Camera {
                 canvas[Self::point_into_index(normalized)] = RGB::white();
             }
         }
+
+        self.draw_lines(canvas, skew);
     }
 
     pub fn push_line(&mut self, line: Line2D) {

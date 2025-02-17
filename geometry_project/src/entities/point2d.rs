@@ -1,4 +1,4 @@
-use crate::entities::affine_matrix2d::Column;
+use crate::{entities::affine_matrix2d::Column, numerics::floating_comparisons::approx_equal};
 use std::{
     fmt,
     ops::{Mul, Sub},
@@ -59,5 +59,9 @@ impl Mul<Matrix2D> for Point2d {
 impl Point2d {
     pub fn origin() -> Self {
         Point2d { x: 0f32, y: 0f32 }
+    }
+
+    pub fn approx_equals(&self, other: &Point2d, epsilon: f32) -> bool {
+        approx_equal(self.x, other.x, epsilon) && approx_equal(self.y, other.y, epsilon)
     }
 }

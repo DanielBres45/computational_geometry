@@ -223,6 +223,7 @@ name = "geometry_project"
 version = "0.1.0"
 dependencies = [
  "data_structures",
+ "log",
  "log_statement",
  "logging",
  "memory_math",

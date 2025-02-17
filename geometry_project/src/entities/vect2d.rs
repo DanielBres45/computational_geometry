@@ -55,4 +55,8 @@ impl Vector2D {
             y: point.y + self.y,
         }
     }
+
+    pub fn len(&self) -> f32 {
+        f32::sqrt(f32::powi(self.x, 2) + f32::powi(self.y, 2))
+    }
 }

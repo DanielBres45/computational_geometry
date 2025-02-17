@@ -7,6 +7,14 @@ edition = "2021"
 minifb = "0.25.0"
 log_statement = { path = "../AOPLogger/log_statement" }
 time_attribute = { path = "../AOPLogger/time_attribute" }
-logging = { path = "../AOPLogger/logging" }
+logging = { path = "../AOPLogger/logging", features = ["Debug"] }
 data_structures = { path = "../MemoryMapping/data_structures"}
 memory_math = { path = "../MemoryMapping/memory_math"}
+
+log = { version = "0.4.22", features = ["std", "serde", "kv"] }
+
+[features]
+default = ["Camera"]
+Camera = ["Debug"]
+Debug = []
+Trace = []

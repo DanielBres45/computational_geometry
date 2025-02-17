@@ -17,4 +17,8 @@ impl RGB {
     pub fn white() -> Self {
         RGB { value: 0xfffffff }
     }
+
+    pub fn red() -> Self {
+        Self::new(255, 0, 0)
+    }
 }

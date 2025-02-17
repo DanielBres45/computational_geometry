@@ -5,6 +5,8 @@ pub mod numerics;
 use data_structures::vec2d::Vec2D;
 use display::{camera::Camera, rgb::RGB};
 use entities::{line2d::Line2D, point2d::Point2d};
+use log::{log, Level};
+use logging::logger::logger::LoggingManager;
 use minifb::{Key, Window, WindowOptions};
 use std::time::Duration;
 
@@ -12,6 +14,8 @@ pub const WINDOW_WIDTH: usize = 512;
 pub const WINDOW_HEIGHT: usize = 512;
 
 fn main() {
+    LoggingManager::init("log_output.txt").expect("Failed to initialize Logger");
+
     let window = Window::new(
         "Geometry Renderer - Esc to exit",
         WINDOW_WIDTH,
@@ -28,6 +32,8 @@ fn main() {
         WINDOW_HEIGHT,
     )
     .expect("width height unexpected");
+
+    log!(Level::Info, "Lets start");
 
     window_loop(window, buffer);
 }
