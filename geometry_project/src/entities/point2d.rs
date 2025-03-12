@@ -1,4 +1,5 @@
 use crate::{entities::affine_matrix2d::Column, numerics::floating_comparisons::approx_equal};
+use core::f32;
 use std::{
     fmt,
     ops::{Mul, Sub},
@@ -61,7 +62,18 @@ impl Point2d {
         Point2d { x: 0f32, y: 0f32 }
     }
 
+    pub fn nan() -> Self {
+        Point2d {
+            x: f32::NAN,
+            y: f32::NAN,
+        }
+    }
+
     pub fn approx_equals(&self, other: &Point2d, epsilon: f32) -> bool {
         approx_equal(self.x, other.x, epsilon) && approx_equal(self.y, other.y, epsilon)
+    }
+
+    pub fn is_nan(&self) -> bool {
+        self.x.is_nan() || self.y.is_nan()
     }
 }

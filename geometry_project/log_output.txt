@@ -1,1386 +1,448 @@
-["2025-02-16 16:17:13"] Target: geometry_project - [File Name: UNKNOWN, line number: 0], Message: "Lets start"
+["2025-03-11 22:10:58"] Target: geometry_project - [File Name: UNKNOWN, line number: 0], Message: "Lets start"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:13"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:58"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:59"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:59"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:59"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:59"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:59"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:59"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:59"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:59"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:59"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:59"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:59"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:59"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:59"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
+["2025-03-11 22:10:59"] Target: Camera - [File Name: src/display/camera.rs, line number: 81], Message: "Line after clipping: [(50, 25), (75, 75)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:59"] Target: Camera - [File Name: src/display/camera.rs, line number: 90], Message: "Line after skew: [(256, 128), (384, 384)]"
 
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:14"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 71], Message: "Draw line at [(25, 25), (75, 75)]"
-
-["2025-02-16 16:17:15"] Target: Camera - [File Name: src/display/camera.rs, line number: 75], Message: "not in view!"
+["2025-03-11 22:10:59"] Target: Camera - [File Name: src/display/camera.rs, line number: 72], Message: "Draw line at [(50, 25), (75, 75)]"
 

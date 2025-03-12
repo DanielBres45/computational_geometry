@@ -59,4 +59,21 @@ impl Vector2D {
     pub fn len(&self) -> f32 {
         f32::sqrt(f32::powi(self.x, 2) + f32::powi(self.y, 2))
     }
+
+    pub fn cross(&self, other: &Vector2D) -> f32 {
+        (self.x * other.y) - (self.y * other.x)
+    }
+}
+
+#[cfg(test)]
+mod tests {
+
+    use super::*;
+
+    #[test]
+    fn test_len() {
+        let vec: Vector2D = Vector2D { x: 4f32, y: 4f32 };
+
+        assert_eq!(f32::sqrt(32f32), vec.len());
+    }
 }

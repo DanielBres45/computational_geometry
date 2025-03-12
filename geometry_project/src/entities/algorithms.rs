@@ -26,20 +26,20 @@ fn min_array(arr: Vec<f32>, n: usize) -> f32 {
 
 pub fn liang_barsky_clip(rect: Rectangle2D, line: Line2D) -> Option<Line2D> {
     let p1: f32 = -(line.end.x - line.start.x);
-    let p2: f32 = -line.start.x;
+    let p2: f32 = -p1;
     let p3: f32 = -(line.end.y - line.start.y);
     let p4: f32 = -p3;
 
     let q1: f32 = line.start.x - rect.min.x;
     let q2: f32 = rect.max.x - line.start.x;
-    let q3: f32 = line.start.y - rect.min.x;
+    let q3: f32 = line.start.y - rect.min.y;
     let q4: f32 = rect.max.y - line.start.y;
 
     let mut posarr: Vec<f32> = vec![0f32; 5];
     let mut negarr: Vec<f32> = vec![0f32; 5];
 
-    let mut posind: u8 = 0;
-    let mut negind: u8 = 0;
+    let mut posind: u8 = 1;
+    let mut negind: u8 = 1;
 
     posarr[0] = 1f32;
     negarr[0] = 0f32;
@@ -61,7 +61,7 @@ pub fn liang_barsky_clip(rect: Rectangle2D, line: Line2D) -> Option<Line2D> {
             negarr[negind as usize] = r1;
             posarr[posind as usize] = r2;
         } else {
-            negarr[negind as usize] = r1;
+            negarr[negind as usize] = r2;
             posarr[posind as usize] = r1;
         }
 
@@ -80,6 +80,9 @@ pub fn liang_barsky_clip(rect: Rectangle2D, line: Line2D) -> Option<Line2D> {
             negarr[negind as usize] = r4;
             posarr[posind as usize] = r3;
         }
+
+        negind += 1;
+        posind += 1;
     }
 
     let rn1: f32 = max_array(negarr, negind as usize);
@@ -118,8 +121,9 @@ mod tests {
         let line: Line2D = Line2D::new_flat(10f32, 10f32, 90f32, 90f32);
 
         let clipped = liang_barsky_clip(rect, line);
-        assert!(clipped.is_some());
+        assert!(clipped.is_some(), "Expected some got none");
 
+        println!("Line after clipping: {}", clipped.unwrap());
         assert!(clipped.unwrap().approx_equals(&line, f32::EPSILON));
     }
 }

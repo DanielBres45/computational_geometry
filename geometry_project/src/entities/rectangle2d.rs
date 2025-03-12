@@ -30,6 +30,10 @@ impl Rectangle2D {
         }
     }
 
+    pub fn is_nan(&self) -> bool {
+        self.min.is_nan() || self.max.is_nan()
+    }
+
     pub fn width(&self) -> f32 {
         f32::abs(self.max.x - self.min.x)
     }

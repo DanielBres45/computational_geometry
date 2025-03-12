@@ -3,6 +3,7 @@ use core::panic;
 use crate::display::rgb::RGB;
 use crate::entities::affine_matrix2d::Matrix2D;
 use crate::entities::algorithms;
+use crate::entities::polygon2d::Polygon2D;
 use crate::entities::rectangle2d::Rectangle2D;
 use crate::entities::vect2d::Vector2D;
 use crate::entities::{line2d::Line2D, point2d::Point2d};
@@ -80,10 +81,13 @@ impl Camera {
             camera_log!("Line after clipping: {}", clipped);
 
             if approx_equal(clipped.len(), 0f32, f32::EPSILON) {
+                camera_log!("0 length line. skipping");
                 continue;
             }
 
             let scaled_line: Line2D = clipped * skew;
+
+            camera_log!("Line after skew: {}", scaled_line);
 
             self.draw_line(scaled_line, canvas);
         }
@@ -108,6 +112,12 @@ impl Camera {
         }
 
         self.draw_lines(canvas, skew);
+    }
+
+    pub fn push_polygon(&mut self, polygon: Polygon2D) {
+        for line in polygon.lines() {
+            self.push_line(line);
+        }
     }
 
     pub fn push_line(&mut self, line: Line2D) {

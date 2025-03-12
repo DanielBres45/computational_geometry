@@ -1,10 +1,13 @@
+pub mod algorithms;
 pub mod display;
 pub mod entities;
+pub mod extensions;
 pub mod numerics;
 
+use algorithms::random_geometry::Random2D;
 use data_structures::vec2d::Vec2D;
 use display::{camera::Camera, rgb::RGB};
-use entities::{line2d::Line2D, point2d::Point2d};
+use entities::{line2d::Line2D, point2d::Point2d, rectangle2d::Rectangle2D};
 use log::{log, Level};
 use logging::logger::logger::LoggingManager;
 use minifb::{Key, Window, WindowOptions};
@@ -41,10 +44,13 @@ fn main() {
 fn window_loop(mut window: Window, mut buffer: Vec2D<RGB>) {
     let mut camera: Camera = Camera::new(100f32, 100f32);
 
-    camera.push_point(Point2d { x: 50f32, y: 50f32 });
+    let min: Point2d = Point2d { x: 25f32, y: 25f32 };
+    let max: Point2d = Point2d { x: 75f32, y: 75f32 };
+
+    camera.push_points(Random2D::random_points(Rectangle2D { min, max }, 10));
 
     camera.push_line(Line2D::new(
-        Point2d { x: 25f32, y: 25f32 },
+        Point2d { x: 50f32, y: 25f32 },
         Point2d { x: 75f32, y: 75f32 },
     ));
 

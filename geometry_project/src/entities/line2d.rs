@@ -53,4 +53,29 @@ impl Line2D {
             || (self.start.approx_equals(&other.end, epsilon)
                 && self.end.approx_equals(&other.start, epsilon))
     }
+
+    pub fn is_nan(&self) -> bool {
+        self.start.is_nan() || self.end.is_nan()
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_approx_equal_1() {
+        let a: Line2D = Line2D::new_flat(0f32, 0f32, 10f32, 10f32);
+        let b: Line2D = Line2D::new_flat(0f32, 0f32, 10f32, 10f32);
+
+        assert!(a.approx_equals(&b, f32::EPSILON));
+    }
+
+    #[test]
+    fn test_approx_equal_2() {
+        let a: Line2D = Line2D::new_flat(0f32, 0f32, 10f32, 10f32);
+        let b: Line2D = Line2D::new_flat(10f32, 10f32, 0f32, 0f32);
+
+        assert!(a.approx_equals(&b, f32::EPSILON));
+    }
 }
