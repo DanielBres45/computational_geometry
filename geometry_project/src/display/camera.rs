@@ -68,8 +68,9 @@ impl Camera {
     }
 
     fn draw_lines(&self, canvas: &mut Vec2D<RGB>, skew: Matrix2D) {
+        //println!("draw lines");
         for line in &self.lines {
-            camera_log!("Draw line at {}", line);
+            //println!("Draw line at {}", line);
             let clipped: Line2D = match self.clip_line(line.to_owned()) {
                 Some(l) => l,
                 None => {
@@ -78,7 +79,7 @@ impl Camera {
                 }
             };
 
-            camera_log!("Line after clipping: {}", clipped);
+            //println!("Line after clipping: {}", clipped);
 
             if approx_equal(clipped.len(), 0f32, f32::EPSILON) {
                 camera_log!("0 length line. skipping");
@@ -87,7 +88,7 @@ impl Camera {
 
             let scaled_line: Line2D = clipped * skew;
 
-            camera_log!("Line after skew: {}", scaled_line);
+            //println!("Line after skew: {}", scaled_line);
 
             self.draw_line(scaled_line, canvas);
         }

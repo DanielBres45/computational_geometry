@@ -47,12 +47,18 @@ fn window_loop(mut window: Window, mut buffer: Vec2D<RGB>) {
     let min: Point2d = Point2d { x: 25f32, y: 25f32 };
     let max: Point2d = Point2d { x: 75f32, y: 75f32 };
 
-    camera.push_points(Random2D::random_points(Rectangle2D { min, max }, 10));
+    let mut points: Vec<Point2d> = Random2D::random_points(Rectangle2D { min, max }, 10)
+        .into_iter()
+        .collect();
 
-    camera.push_line(Line2D::new(
-        Point2d { x: 50f32, y: 25f32 },
-        Point2d { x: 75f32, y: 75f32 },
-    ));
+    let polygon = algorithms::convex_hull::convex_hull(&mut points)
+        .unwrap_or_else(|| panic!("Uhm didnt work"));
+
+    camera.push_points(points);
+
+    camera.push_polygon(polygon);
+
+    println!("Ready to render");
 
     while window.is_open() && !window.is_key_down(Key::Escape) {
         std::thread::sleep(Duration::from_millis(1));

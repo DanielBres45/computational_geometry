@@ -7,7 +7,7 @@ use std::{
 
 use super::{affine_matrix2d::Matrix2D, vect2d::Vector2D};
 
-#[derive(Copy, Clone, Debug)]
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct Point2d {
     pub x: f32,
     pub y: f32,

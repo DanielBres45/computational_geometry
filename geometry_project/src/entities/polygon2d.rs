@@ -25,3 +25,37 @@ impl Polygon2D {
         lines
     }
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    pub fn test_lines() {
+        let polygon: Polygon2D = Polygon2D {
+            points: [
+                Point2d { x: 0f32, y: 0f32 },
+                Point2d { x: 0f32, y: 10f32 },
+                Point2d { x: 10f32, y: 10f32 },
+                Point2d { x: 10f32, y: 0f32 },
+            ]
+            .into(),
+        };
+
+        let expected: Vec<Line2D> = [
+            Line2D::new_flat(0f32, 0f32, 0f32, 10f32),
+            Line2D::new_flat_int(0, 10, 10, 10),
+            Line2D::new_flat_int(10, 10, 10, 0),
+            Line2D::new_flat_int(10, 0, 0, 0),
+        ]
+        .into();
+
+        let lines = polygon.lines();
+
+        assert_eq!(expected.len(), lines.len());
+
+        for i in 0..lines.len() {
+            assert_eq!(expected[i], lines[i]);
+        }
+    }
+}

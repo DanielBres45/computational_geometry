@@ -32,3 +32,18 @@ impl VecPointExtesions for Vec<Point2d> {
         }); //lexigraphical Ordering
     }
 }
+
+#[cfg(test)]
+mod tests {
+    use crate::extensions::vec_extensions::VecExtensions;
+
+    #[test]
+    pub fn test_from_last() {
+        let items: Vec<i32> = [0, 1, 2, 3, 4].into();
+
+        assert_eq!(4, items.from_last(0));
+        assert_eq!(3, items.from_last(1));
+        assert_eq!(2, items.from_last(2));
+        assert_eq!(1, items.from_last(3));
+    }
+}

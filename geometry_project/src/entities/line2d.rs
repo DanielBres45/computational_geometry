@@ -11,6 +11,13 @@ pub struct Line2D {
     pub end: Point2d,
 }
 
+impl PartialEq for Line2D {
+    fn eq(&self, other: &Self) -> bool {
+        (self.start.eq(&other.start) && self.end.eq(&other.end))
+            || (self.end.eq(&other.start) && self.start.eq(&other.end))
+    }
+}
+
 impl fmt::Display for Line2D {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
         write!(f, "[{}, {}]", self.start, self.end)
@@ -41,6 +48,14 @@ impl Line2D {
             start: Point2d { x: x1, y: y1 },
             end: Point2d { x: x2, y: y2 },
         }
+    }
+
+    pub fn new_flat_int(x1: i32, y1: i32, x2: i32, y2: i32) -> Self {
+        Self::new_flat(x1 as f32, y1 as f32, x2 as f32, y2 as f32)
+    }
+
+    pub fn new_flat_into<T: Into<f32>>(x1: T, y1: T, x2: T, y2: T) -> Self {
+        Self::new_flat(x1.into(), y1.into(), x2.into(), y2.into())
     }
 
     pub fn len(&self) -> f32 {

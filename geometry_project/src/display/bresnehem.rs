@@ -1,10 +1,14 @@
 use memory_math::memory_index2d::MemIndex2D;
 
-use crate::entities::{line2d::Line2D, point2d::Point2d};
+use crate::{
+    entities::{line2d::Line2D, point2d::Point2d},
+    numerics::floating_comparisons::approx_equal,
+};
 
+#[derive(Clone, Copy)]
 pub struct BresnehemIter {
-    start: Point2d,
-    end: Point2d,
+    pub start: Point2d,
+    pub end: Point2d,
     dx: f32,
     dy: f32,
     sx: f32,
@@ -48,14 +52,22 @@ impl Iterator for BresnehemIter {
             return None;
         }
 
+        //println!("point: {}", self.start);
+
         let value: Option<MemIndex2D> = Some(MemIndex2D::new(
             self.start.y as usize,
             self.start.x as usize,
         ));
 
+        if self.start.approx_equals(&self.end, 0.001) {
+            self.start = Point2d::nan();
+            return value;
+        }
+
         if 2f32 * self.error >= self.dy {
-            if self.start.x == self.end.x {
+            if approx_equal(self.start.x, self.end.x, 0.001) {
                 self.start = Point2d::nan();
+                return value;
             }
 
             self.error += self.dy;
@@ -66,8 +78,9 @@ impl Iterator for BresnehemIter {
         }
 
         if 2f32 * self.error <= self.dx {
-            if self.end.y == self.start.y {
+            if approx_equal(self.end.y, self.start.y, 0.001) {
                 self.start = Point2d::nan();
+                return value;
             }
 
             self.error += self.dx;
@@ -133,6 +146,18 @@ mod tests {
         for i in 0..10 {
             println!("{}, expected: {}, list: {}", i, expected[i], list[i]);
             assert_eq!(expected[i], list[i])
+        }
+    }
+
+    #[test]
+    fn test_no_zero() {
+        let line: Line2D = Line2D::new_flat(383.45f32, 260.17f32, 378.096f32, 180.92f32);
+
+        let iter: BresnehemIter = line.into();
+
+        for mem_index in iter {
+            println!("index: {}", mem_index);
+            assert_ne!(MemIndex2D { row: 0, col: 0 }, mem_index);
         }
     }
 }
