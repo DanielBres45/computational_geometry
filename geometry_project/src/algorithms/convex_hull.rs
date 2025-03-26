@@ -10,7 +10,7 @@ fn right_turn(a: Point2d, b: Point2d, c: Point2d) -> bool {
     let v1: Vector2D = b - a;
     let v2: Vector2D = c - b;
 
-    return approx_less(v1.cross(&v2), 0f32, f32::EPSILON);
+    return approx_less(v1.cross(&v2), 0f32, 0.0001);
 }
 
 pub fn convex_hull(points: &mut Vec<Point2d>) -> Option<Polygon2D> {
