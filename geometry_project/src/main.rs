@@ -9,6 +9,7 @@ use data_structures::vec2d::Vec2D;
 use display::{camera::Camera, rgb::RGB};
 use entities::{line2d::Line2D, point2d::Point2d, rectangle2d::Rectangle2D};
 use log::{log, Level};
+use logging::flush;
 use logging::logger::logger::LoggingManager;
 use minifb::{Key, Window, WindowOptions};
 use std::time::Duration;
@@ -51,6 +52,8 @@ fn window_loop(mut window: Window, mut buffer: Vec2D<RGB>) {
         .into_iter()
         .collect();
 
+    log!(Level::Info, "pts: {:?}", points);
+
     let polygon = algorithms::convex_hull::convex_hull(&mut points)
         .unwrap_or_else(|| panic!("Uhm didnt work"));
 
@@ -66,6 +69,8 @@ fn window_loop(mut window: Window, mut buffer: Vec2D<RGB>) {
         camera.draw(&mut buffer);
         buffer_to_window(&mut window, buffer.clone());
     }
+
+    flush!("end");
 }
 
 fn buffer_to_window(window: &mut Window, buffer2d: Vec2D<RGB>) {

@@ -74,7 +74,7 @@ impl Camera {
             let clipped: Line2D = match self.clip_line(line.to_owned()) {
                 Some(l) => l,
                 None => {
-                    camera_log!("not in view!");
+                    //camera_log!("not in view!");
                     continue;
                 }
             };
@@ -82,7 +82,7 @@ impl Camera {
             //println!("Line after clipping: {}", clipped);
 
             if approx_equal(clipped.len(), 0f32, f32::EPSILON) {
-                camera_log!("0 length line. skipping");
+                //camera_log!("0 length line. skipping");
                 continue;
             }
 
