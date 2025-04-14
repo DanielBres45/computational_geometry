@@ -4,6 +4,8 @@ pub mod entities;
 pub mod extensions;
 pub mod numerics;
 
+mod convex_hull_scenario;
+
 use algorithms::random_geometry::Random2D;
 use data_structures::vec2d::Vec2D;
 use display::{camera::Camera, rgb::RGB};
@@ -52,7 +54,7 @@ fn window_loop(mut window: Window, mut buffer: Vec2D<RGB>) {
         .into_iter()
         .collect();
 
-    log!(Level::Info, "pts: {:?}", points);
+    log!(Level::Info, "pts: {:?}", serde_json::to_string(&points));
 
     let polygon = algorithms::convex_hull::convex_hull(&mut points)
         .unwrap_or_else(|| panic!("Uhm didnt work"));

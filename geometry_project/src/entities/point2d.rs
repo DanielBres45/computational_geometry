@@ -1,5 +1,6 @@
 use crate::{entities::affine_matrix2d::Column, numerics::floating_comparisons::approx_equal};
 use core::f32;
+use serde::{Deserialize, Serialize};
 use std::{
     fmt,
     ops::{Mul, Sub},
@@ -7,7 +8,7 @@ use std::{
 
 use super::{affine_matrix2d::Matrix2D, vect2d::Vector2D};
 
-#[derive(Copy, Clone, Debug, PartialEq)]
+#[derive(Copy, Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct Point2d {
     pub x: f32,
     pub y: f32,

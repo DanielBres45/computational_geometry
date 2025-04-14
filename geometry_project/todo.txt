@@ -1,0 +1,11 @@
+* Scenario.rs 
+  -> the main "frame" or "thing" that logic happens in
+  * Random points and convex polygon? Scenario 
+  * Loading points and displaying? Scenario
+
+  1. Initialize
+  #  (inside loop)
+  2. Handle input -> change state (scenarios are stateful)
+  3. fn process(&mut camera)
+  4. camera.draw(&mut buffer)
+  5. buffer_to_window(&mut window, buffer)
