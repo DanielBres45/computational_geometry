@@ -3,17 +3,17 @@ pub mod display;
 pub mod entities;
 pub mod extensions;
 pub mod numerics;
-
-mod convex_hull_scenario;
+mod scenarios;
 
 use algorithms::random_geometry::Random2D;
 use data_structures::vec2d::Vec2D;
-use display::{camera::Camera, rgb::RGB};
+use display::{camera::Camera, rgb::RGB, scenario::IScenario};
 use entities::{line2d::Line2D, point2d::Point2d, rectangle2d::Rectangle2D};
 use log::{log, Level};
 use logging::flush;
 use logging::logger::logger::LoggingManager;
 use minifb::{Key, Window, WindowOptions};
+use scenarios::convex_hull_scenario::ConvexHullScenario;
 use std::time::Duration;
 
 pub const WINDOW_WIDTH: usize = 512;
@@ -50,23 +50,26 @@ fn window_loop(mut window: Window, mut buffer: Vec2D<RGB>) {
     let min: Point2d = Point2d { x: 25f32, y: 25f32 };
     let max: Point2d = Point2d { x: 75f32, y: 75f32 };
 
-    let mut points: Vec<Point2d> = Random2D::random_points(Rectangle2D { min, max }, 10)
-        .into_iter()
-        .collect();
+    let scenario: &mut dyn IScenario = &mut ConvexHullScenario::new(10, Rectangle2D { min, max });
 
-    log!(Level::Info, "pts: {:?}", serde_json::to_string(&points));
-
-    let polygon = algorithms::convex_hull::convex_hull(&mut points)
-        .unwrap_or_else(|| panic!("Uhm didnt work"));
-
-    camera.push_points(points);
-
-    camera.push_polygon(polygon);
+    match scenario.initialize() {
+        Ok(_) => {}
+        Err(e_msg) => {
+            panic!("{}", e_msg);
+        }
+    };
 
     println!("Ready to render");
 
     while window.is_open() && !window.is_key_down(Key::Escape) {
         std::thread::sleep(Duration::from_millis(1));
+
+        scenario.handle_input(&window);
+
+        if scenario.redraw() {
+            camera.clear();
+            scenario.process(&mut camera);
+        }
 
         camera.draw(&mut buffer);
         buffer_to_window(&mut window, buffer.clone());

@@ -37,6 +37,13 @@ impl Camera {
         }
     }
 
+    pub fn clear(&mut self) {
+        self.points.clear();
+        self.lines.clear();
+        self.point_colors.clear();
+        self.line_colors.clear();
+    }
+
     fn point_into_index(value: Point2d) -> MemIndex2D {
         if !value.y.is_finite() || !value.x.is_finite() {
             panic!("point not finite: {}", value);

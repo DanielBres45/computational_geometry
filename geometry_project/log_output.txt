@@ -1,6 +1,6 @@
-["2025-04-13 13:49:44"] Target: geometry_project - [File Name: UNKNOWN, line number: 0], Message: "Lets start" 
+["2025-04-24 18:55:58"] Target: geometry_project - [File Name: UNKNOWN, line number: 0], Message: Lets start
 
-["2025-04-13 13:49:44"] Target: geometry_project - [File Name: UNKNOWN, line number: 0], Message: "pts: Ok(\"[{\\\"x\\\":32.01564,\\\"y\\\":60.22376},{\\\"x\\\":62.35255,\\\"y\\\":49.068768},{\\\"x\\\":63.948486,\\\"y\\\":54.375862},{\\\"x\\\":67.014824,\\\"y\\\":69.69218},{\\\"x\\\":28.86908,\\\"y\\\":52.45567},{\\\"x\\\":55.66835,\\\"y\\\":29.504347},{\\\"x\\\":36.373646,\\\"y\\\":36.9849},{\\\"x\\\":66.153015,\\\"y\\\":52.13877},{\\\"x\\\":42.2567,\\\"y\\\":56.74606},{\\\"x\\\":49.307236,\\\"y\\\":29.210722}]\")" 
+["2025-04-24 18:55:58"] Target: ConvexHull - [File Name: src/scenarios/convex_hull_scenario.rs, line number: 33], Message: points: [{"x":47.049988,"y":40.565723},{"x":63.62596,"y":71.21944},{"x":51.710922,"y":58.28584},{"x":37.263145,"y":37.08806},{"x":52.517193,"y":25.00509},{"x":38.164597,"y":38.133904},{"x":26.03504,"y":74.913895},{"x":48.382652,"y":48.386562},{"x":46.747765,"y":59.122288},{"x":67.9445,"y":46.077736}]
 
-["2025-04-13 13:49:45"] Target: geometry_project - [File Name: UNKNOWN, line number: 0], Message: "end" 
+["2025-04-24 18:55:59"] Target: geometry_project - [File Name: UNKNOWN, line number: 0], Message: end
 
