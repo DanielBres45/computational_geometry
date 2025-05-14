@@ -4,6 +4,7 @@ pub mod entities;
 pub mod extensions;
 pub mod numerics;
 mod scenarios;
+mod testing_tools;
 
 use algorithms::random_geometry::Random2D;
 use data_structures::vec2d::Vec2D;
