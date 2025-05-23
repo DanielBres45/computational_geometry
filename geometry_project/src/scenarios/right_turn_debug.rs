@@ -1,30 +1,55 @@
 use crate::{
-    algorithms::random_geometry::Random2D,
-    display::scenario::IScenario,
-    entities::{point2d::Point2d, rectangle2d::Rectangle2D},
+    algorithms::{self, mixed_increment::MixedIncremenet, random_geometry::Random2D},
+    display::{rgb::RGB, scenario::IScenario},
+    entities::{line2d::Line2D, point2d::Point2d, rectangle2d::Rectangle2D},
 };
 use log_statement::def_log;
 
 pub struct RightTurnDebug {
-    pub count: i32,
+    pub count: usize,
     points: Vec<Point2d>,
-    i: usize,
-    j: usize,
-    k: usize,
+    indexes: Vec<usize>,
+    increment: MixedIncremenet,
+    redraw: bool,
 }
 
 def_log!(RightTurnDebug);
 
 impl RightTurnDebug {
-    pub fn new(rect: Rectangle2D) -> Self {
-        let points: Vec<Point2d> = Random2D::random_points(rect, 10).into_iter().collect();
+    pub fn new(count: usize, rect: Rectangle2D) -> Self {
+        let points: Vec<Point2d> = Random2D::random_points(rect, count as i32)
+            .into_iter()
+            .collect();
 
-        RightTurnDebug {
-            count: 10,
+        let mut debug = RightTurnDebug {
+            count,
             points,
-            i: 0,
-            j: 1,
-            k: 2,
+            indexes: Vec::new(),
+            increment: MixedIncremenet::new_uniform(count, 3),
+            redraw: true,
+        };
+
+        debug.increment();
+
+        debug
+    }
+
+    fn increment(&mut self) {
+        loop {
+            rightturndebug_log!("Increment next");
+            match self.increment.next() {
+                Some(val) => {
+                    if val[0] == val[1] || val[1] == val[2] || val[0] == val[2] {
+                        continue;
+                    }
+
+                    self.indexes = val;
+                    return;
+                }
+                None => {
+                    self.increment = MixedIncremenet::new_uniform(self.count, 3);
+                }
+            }
         }
     }
 }
@@ -35,12 +60,34 @@ impl IScenario for RightTurnDebug {
     }
 
     fn handle_input(&mut self, window: &minifb::Window) {
-        if window.is_key_down(minifb::Key::Right) {}
+        if window.is_key_down(minifb::Key::Right) {
+            rightturndebug_log!("Move next");
+            self.increment();
+            self.redraw = true;
+        }
     }
 
-    fn process(&mut self, camera: &mut crate::display::camera::Camera) {}
+    fn process(&mut self, camera: &mut crate::display::camera::Camera) {
+        camera.push_points(self.points.clone());
+
+        let a: Point2d = self.points[self.indexes[0]];
+        let b: Point2d = self.points[self.indexes[1]];
+        let c: Point2d = self.points[self.indexes[2]];
+
+        camera.push_line(Line2D::new(a, b));
+        camera.push_line(Line2D::new(b, c));
+
+        let color: RGB = match algorithms::convex_hull::right_turn(a, b, c) {
+            true => RGB::green(),
+            false => RGB::red(),
+        };
+
+        camera.push_line_color(color);
+        camera.push_line_color(color);
+        self.redraw = false;
+    }
 
     fn redraw(&mut self) -> bool {
-        true
+        self.redraw
     }
 }

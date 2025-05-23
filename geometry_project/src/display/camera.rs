@@ -164,6 +164,10 @@ impl Camera {
         }
     }
 
+    pub fn push_line_color(&mut self, line_color: RGB) {
+        self.line_colors.push(line_color);
+    }
+
     pub fn push_lines_color<T>(&mut self, lines_colors: T)
     where
         T: IntoIterator<Item = (Line2D, RGB)>,

@@ -6,15 +6,15 @@ pub mod numerics;
 mod scenarios;
 mod testing_tools;
 
-use algorithms::random_geometry::Random2D;
+use ctrlc::set_handler;
 use data_structures::vec2d::Vec2D;
 use display::{camera::Camera, rgb::RGB, scenario::IScenario};
 use entities::{line2d::Line2D, point2d::Point2d, rectangle2d::Rectangle2D};
-use log::{log, Level};
+use log::{log, Level, Log};
 use logging::flush;
 use logging::logger::logger::LoggingManager;
 use minifb::{Key, Window, WindowOptions};
-use scenarios::convex_hull_scenario::ConvexHullScenario;
+use scenarios::{convex_hull_scenario::ConvexHullScenario, right_turn_debug::RightTurnDebug};
 use std::time::Duration;
 
 pub const WINDOW_WIDTH: usize = 512;
@@ -22,6 +22,8 @@ pub const WINDOW_HEIGHT: usize = 512;
 
 fn main() {
     LoggingManager::init("log_output.txt").expect("Failed to initialize Logger");
+
+    set_handler(|| handle_sigint()).expect("Error setting ctrlc hook");
 
     let window = Window::new(
         "Geometry Renderer - Esc to exit",
@@ -33,16 +35,26 @@ fn main() {
         panic!("{}", e);
     });
 
-    let mut buffer: Vec2D<RGB> = Vec2D::new_from_flatpack(
-        vec![RGB::black(); WINDOW_WIDTH * WINDOW_HEIGHT],
-        WINDOW_WIDTH,
-        WINDOW_HEIGHT,
-    )
-    .expect("width height unexpected");
+    let buffer = blank_screen();
 
     log!(Level::Info, "Lets start");
 
     window_loop(window, buffer);
+}
+
+fn handle_sigint() {
+    eprintln!("Caught Ctrl^C flushing log");
+    LoggingManager::static_flush();
+    std::process::exit(1);
+}
+
+fn blank_screen() -> Vec2D<RGB> {
+    Vec2D::new_from_flatpack(
+        vec![RGB::black(); WINDOW_WIDTH * WINDOW_HEIGHT],
+        WINDOW_WIDTH,
+        WINDOW_HEIGHT,
+    )
+    .expect("width height unexpected")
 }
 
 fn window_loop(mut window: Window, mut buffer: Vec2D<RGB>) {
@@ -51,7 +63,7 @@ fn window_loop(mut window: Window, mut buffer: Vec2D<RGB>) {
     let min: Point2d = Point2d { x: 25f32, y: 25f32 };
     let max: Point2d = Point2d { x: 75f32, y: 75f32 };
 
-    let scenario: &mut dyn IScenario = &mut ConvexHullScenario::new(10, Rectangle2D { min, max });
+    let scenario: &mut dyn IScenario = &mut RightTurnDebug::new(10, Rectangle2D { min, max });
 
     match scenario.initialize() {
         Ok(_) => {}
@@ -62,13 +74,20 @@ fn window_loop(mut window: Window, mut buffer: Vec2D<RGB>) {
 
     println!("Ready to render");
 
+    let mut handled_input: bool = true;
     while window.is_open() && !window.is_key_down(Key::Escape) {
-        std::thread::sleep(Duration::from_millis(1));
+        std::thread::sleep(Duration::from_millis(100));
 
-        scenario.handle_input(&window);
+        if !handled_input {
+            scenario.handle_input(&window);
+            handled_input = true;
+        } else {
+            handled_input = false;
+        }
 
         if scenario.redraw() {
             camera.clear();
+            buffer = blank_screen();
             scenario.process(&mut camera);
         }
 

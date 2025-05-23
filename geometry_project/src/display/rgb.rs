@@ -21,6 +21,10 @@ impl RGB {
     pub fn red() -> Self {
         Self::new(255, 0, 0)
     }
+
+    pub fn green() -> Self {
+        Self::new(0, 255, 0)
+    }
 }
 
 #[cfg(test)]

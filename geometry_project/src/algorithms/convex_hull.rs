@@ -6,7 +6,7 @@ use crate::{
     numerics::floating_comparisons::{approx_greater, approx_less},
 };
 
-fn right_turn(a: Point2d, b: Point2d, c: Point2d) -> bool {
+pub fn right_turn(a: Point2d, b: Point2d, c: Point2d) -> bool {
     let v1: Vector2D = b - a;
     let v2: Vector2D = c - b;
 
