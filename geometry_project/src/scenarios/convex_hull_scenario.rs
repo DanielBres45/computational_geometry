@@ -50,7 +50,7 @@ impl IScenario for ConvexHullScenario {
     }
 
     fn handle_input(&mut self, window: &minifb::Window) {
-        if window.is_key_down(minifb::Key::R) {
+        if window.is_key_pressed(minifb::Key::R, minifb::KeyRepeat::No) {
             self.random_points();
         }
     }

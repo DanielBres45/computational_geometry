@@ -36,7 +36,6 @@ impl RightTurnDebug {
 
     fn increment(&mut self) {
         loop {
-            rightturndebug_log!("Increment next");
             match self.increment.next() {
                 Some(val) => {
                     if val[0] == val[1] || val[1] == val[2] || val[0] == val[2] {
@@ -52,6 +51,22 @@ impl RightTurnDebug {
             }
         }
     }
+
+    fn decrement(&mut self) {
+        loop {
+            match self.increment.decrement() {
+                Some(val) => {
+                    if val[0] == val[1] || val[1] == val[2] || val[0] == val[2] {
+                        continue;
+                    }
+
+                    self.indexes = val;
+                    return;
+                }
+                None => {}
+            }
+        }
+    }
 }
 
 impl IScenario for RightTurnDebug {
@@ -60,10 +75,19 @@ impl IScenario for RightTurnDebug {
     }
 
     fn handle_input(&mut self, window: &minifb::Window) {
-        if window.is_key_down(minifb::Key::Right) {
-            rightturndebug_log!("Move next");
+        if window.is_key_pressed(minifb::Key::Right, minifb::KeyRepeat::No) {
             self.increment();
             self.redraw = true;
+        } else if window.is_key_pressed(minifb::Key::Left, minifb::KeyRepeat::No) {
+            self.decrement();
+            self.redraw = true;
+        } else if window.is_key_pressed(minifb::Key::Enter, minifb::KeyRepeat::No) {
+            rightturndebug_log!(
+                "a: {}, b: {}, c: {}",
+                self.points[self.indexes[0]],
+                self.points[self.indexes[1]],
+                self.points[self.indexes[2]]
+            );
         }
     }
 
@@ -77,7 +101,17 @@ impl IScenario for RightTurnDebug {
         camera.push_line(Line2D::new(a, b));
         camera.push_line(Line2D::new(b, c));
 
-        let color: RGB = match algorithms::convex_hull::right_turn(a, b, c) {
+        let right_turn: bool = algorithms::convex_hull::right_turn(a, b, c);
+
+        rightturndebug_log!(
+            "Checking points: {}, {}, {}. Right turn: {} ",
+            a,
+            b,
+            c,
+            right_turn
+        );
+
+        let color: RGB = match right_turn {
             true => RGB::green(),
             false => RGB::red(),
         };

@@ -63,7 +63,7 @@ fn window_loop(mut window: Window, mut buffer: Vec2D<RGB>) {
     let min: Point2d = Point2d { x: 25f32, y: 25f32 };
     let max: Point2d = Point2d { x: 75f32, y: 75f32 };
 
-    let scenario: &mut dyn IScenario = &mut RightTurnDebug::new(10, Rectangle2D { min, max });
+    let scenario: &mut dyn IScenario = &mut ConvexHullScenario::new(10, Rectangle2D { min, max });
 
     match scenario.initialize() {
         Ok(_) => {}
@@ -74,16 +74,10 @@ fn window_loop(mut window: Window, mut buffer: Vec2D<RGB>) {
 
     println!("Ready to render");
 
-    let mut handled_input: bool = true;
     while window.is_open() && !window.is_key_down(Key::Escape) {
-        std::thread::sleep(Duration::from_millis(100));
+        std::thread::sleep(Duration::from_millis(1));
 
-        if !handled_input {
-            scenario.handle_input(&window);
-            handled_input = true;
-        } else {
-            handled_input = false;
-        }
+        scenario.handle_input(&window);
 
         if scenario.redraw() {
             camera.clear();

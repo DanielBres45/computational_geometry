@@ -25,6 +25,20 @@ impl MixedIncremenet {
             done: false,
         }
     }
+
+    pub fn decrement(&mut self) -> Option<Vec<usize>> {
+        for i in (0..self.indexes.len()).rev() {
+            match self.indexes[i].checked_sub(1) {
+                Some(val) => {
+                    self.indexes[i] = val;
+                    return Some(self.indexes.clone());
+                }
+                None => self.indexes[i] = 0,
+            }
+        }
+
+        None
+    }
 }
 
 impl Iterator for MixedIncremenet {
@@ -52,5 +66,17 @@ impl Iterator for MixedIncremenet {
         }
 
         return Some(items);
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    pub fn test_decrement_1() {
+        let mut inc: MixedIncremenet = MixedIncremenet::new_uniform(5, 5);
+
+        assert_eq!(None, inc.decrement());
     }
 }

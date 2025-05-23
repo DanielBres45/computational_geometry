@@ -1,0 +1,188 @@
+warning: variable does not need to be mutable
+  --> /home/squeegeemonster/computational_geometry/MemoryMapping/memory_math/src/memory_iter.rs:62:13
+   |
+62 |         let mut x0 = start_index.col as i32;
+   |             ----^^
+   |             |
+   |             help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` on by default
+
+warning: variable does not need to be mutable
+  --> /home/squeegeemonster/computational_geometry/MemoryMapping/memory_math/src/memory_iter.rs:63:13
+   |
+63 |         let mut y0 = start_index.row as i32;
+   |             ----^^
+   |             |
+   |             help: remove this `mut`
+
+warning: field `current_direction` is never read
+   --> /home/squeegeemonster/computational_geometry/MemoryMapping/memory_math/src/memory_range.rs:265:5
+    |
+261 | pub struct BoustrophedonRead
+    |            ----------------- field in this struct
+...
+265 |     current_direction: Offset
+    |     ^^^^^^^^^^^^^^^^^
+    |
+    = note: `#[warn(dead_code)]` on by default
+
+warning: `memory_math` (lib) generated 3 warnings (run `cargo fix --lib -p memory_math` to apply 2 suggestions)
+warning: unused imports: `clone` and `fmt::Pointer`
+ --> /home/squeegeemonster/computational_geometry/MemoryMapping/data_structures/src/tile_map.rs:2:5
+  |
+2 |     clone, fmt,
+  |     ^^^^^
+3 |     fmt::Pointer,
+  |     ^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `memory_range::LeftToRightRead`
+ --> /home/squeegeemonster/computational_geometry/MemoryMapping/data_structures/src/vec2d.rs:7:5
+  |
+7 |     memory_range::LeftToRightRead,
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused variable: `tile_coord`
+   --> /home/squeegeemonster/computational_geometry/MemoryMapping/data_structures/src/tile_map.rs:172:39
+    |
+172 |             CoordinateType::TileIndex(tile_coord) => Some(MemIndex2D::origin()),
+    |                                       ^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_tile_coord`
+    |
+    = note: `#[warn(unused_variables)]` on by default
+
+warning: associated function `new` is never used
+  --> /home/squeegeemonster/computational_geometry/MemoryMapping/data_structures/src/option_vec2d.rs:60:8
+   |
+45 | impl<T> OptionVec2D<T> {
+   | ---------------------- associated function in this implementation
+...
+60 |     fn new(items: Vec<T>, width: usize, height: usize) -> Self {
+   |        ^^^
+   |
+   = note: `#[warn(dead_code)]` on by default
+
+warning: associated function `new` is never used
+  --> /home/squeegeemonster/computational_geometry/MemoryMapping/data_structures/src/tile_map.rs:36:8
+   |
+35 | impl TileIntersection {
+   | --------------------- associated function in this implementation
+36 |     fn new(tile_index: MemIndex2D, intersection: MemExtents2D) -> Self {
+   |        ^^^
+
+warning: unused import: `warn`
+ --> /home/squeegeemonster/computational_geometry/AOPLogger/logging/src/logger/key_collector.rs:5:5
+  |
+5 |     warn,
+  |     ^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `warn`
+ --> /home/squeegeemonster/computational_geometry/AOPLogger/logging/src/logger/logger.rs:5:11
+  |
+5 | use log::{warn, Level, LevelFilter, Log, Metadata, Record, SetLoggerError};
+  |           ^^^^
+
+warning: unused import: `Log`
+ --> /home/squeegeemonster/computational_geometry/AOPLogger/logging/src/logger/logger.rs:5:37
+  |
+5 | use log::{warn, Level, LevelFilter, Log, Metadata, Record, SetLoggerError};
+  |                                     ^^^
+
+warning: variable does not need to be mutable
+  --> /home/squeegeemonster/computational_geometry/AOPLogger/logging/src/file_handling/string_builder.rs:31:23
+   |
+31 |     pub fn add_string(mut self, append: String) -> Self {
+   |                       ----^^^^
+   |                       |
+   |                       help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` on by default
+
+warning: unused variable: `e`
+  --> /home/squeegeemonster/computational_geometry/AOPLogger/logging/src/logger/logger.rs:42:30
+   |
+42 |             .unwrap_or_else(|e| panic!("Error setting logger"));
+   |                              ^ help: if this is intentional, prefix it with an underscore: `_e`
+   |
+   = note: `#[warn(unused_variables)]` on by default
+
+warning: `data_structures` (lib) generated 5 warnings (run `cargo fix --lib -p data_structures` to apply 2 suggestions)
+warning: `logging` (lib) generated 5 warnings (run `cargo fix --lib -p logging` to apply 3 suggestions)
+   Compiling geometry_project v0.1.0 (/home/squeegeemonster/computational_geometry/geometry_project)
+error[E0252]: the name `algorithms` is defined multiple times
+ --> src/scenarios/right_turn_debug.rs:4:16
+  |
+2 |     algorithms::{self, mixed_increment::MixedIncremenet, random_geometry::Random2D},
+  |                  ---- previous import of the module `algorithms` here
+3 |     display::{rgb::RGB, scenario::IScenario},
+4 |     entities::{algorithms, line2d::Line2D, point2d::Point2d, rectangle2d::Rectangle2D},
+  |                ^^^^^^^^^^ `algorithms` reimported here
+  |
+  = note: `algorithms` must be defined only once in the type namespace of this module
+help: you can use `as` to change the binding name of the import
+  |
+4 |     entities::{algorithms as other_algorithms, line2d::Line2D, point2d::Point2d, rectangle2d::Rectangle2D},
+  |                           +++++++++++++++++++
+
+warning: unused imports: `cmp::Ordering` and `f32`
+ --> src/algorithms/convex_hull.rs:1:11
+  |
+1 | use std::{cmp::Ordering, f32};
+  |           ^^^^^^^^^^^^^  ^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `approx_greater`
+ --> src/algorithms/convex_hull.rs:6:38
+  |
+6 |     numerics::floating_comparisons::{approx_greater, approx_less},
+  |                                      ^^^^^^^^^^^^^^
+
+warning: unused imports: `approx_equal` and `self`
+ --> src/entities/rectangle2d.rs:6:9
+  |
+6 |         self, approx_equal, approx_equal_greater, approx_equal_less, approx_less,
+  |         ^^^^  ^^^^^^^^^^^^
+
+warning: unused import: `def_log_data`
+ --> src/scenarios/convex_hull_scenario.rs:1:30
+  |
+1 | use log_statement::{def_log, def_log_data};
+  |                              ^^^^^^^^^^^^
+
+warning: unused import: `self`
+ --> src/scenarios/convex_hull_scenario.rs:5:25
+  |
+5 |     display::scenario::{self, IScenario},
+  |                         ^^^^
+
+warning: unused import: `algorithms`
+ --> src/scenarios/right_turn_debug.rs:4:16
+  |
+4 |     entities::{algorithms, line2d::Line2D, point2d::Point2d, rectangle2d::Rectangle2D},
+  |                ^^^^^^^^^^
+
+warning: unused import: `line2d::Line2D`
+  --> src/main.rs:12:16
+   |
+12 | use entities::{line2d::Line2D, point2d::Point2d, rectangle2d::Rectangle2D};
+   |                ^^^^^^^^^^^^^^
+
+warning: unused import: `Log`
+  --> src/main.rs:13:23
+   |
+13 | use log::{log, Level, Log};
+   |                       ^^^
+
+warning: unused import: `convex_hull_scenario::ConvexHullScenario`
+  --> src/main.rs:17:17
+   |
+17 | use scenarios::{convex_hull_scenario::ConvexHullScenario, right_turn_debug::RightTurnDebug};
+   |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+For more information about this error, try `rustc --explain E0252`.
+warning: `geometry_project` (bin "geometry_project") generated 9 warnings
+error: could not compile `geometry_project` (bin "geometry_project") due to 1 previous error; 9 warnings emitted

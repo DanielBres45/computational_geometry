@@ -64,18 +64,20 @@ impl Camera {
         algorithms::liang_barsky_clip(self.view_port, line)
     }
 
-    fn draw_line(&self, line: Line2D, canvas: &mut Vec2D<RGB>) {
+    fn draw_line(&self, line: Line2D, color: RGB, canvas: &mut Vec2D<RGB>) {
         let iter: BresnehemIter = line.into();
 
         for point in iter {
             if canvas.index2d_in_bounds(point) {
-                canvas[point] = RGB::red();
+                canvas[point] = color;
             }
         }
     }
 
     fn draw_lines(&self, canvas: &mut Vec2D<RGB>, skew: Matrix2D) {
         //println!("draw lines");
+
+        let mut idx: usize = 0;
         for line in &self.lines {
             //println!("Draw line at {}", line);
             let clipped: Line2D = match self.clip_line(line.to_owned()) {
@@ -97,7 +99,13 @@ impl Camera {
 
             //println!("Line after skew: {}", scaled_line);
 
-            self.draw_line(scaled_line, canvas);
+            let color: RGB = match self.line_colors.len() > idx {
+                true => self.line_colors[idx],
+                false => RGB::red(),
+            };
+            idx += 1;
+
+            self.draw_line(scaled_line, color, canvas);
         }
     }
 

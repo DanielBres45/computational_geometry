@@ -8,9 +8,9 @@ use crate::{
 
 pub fn right_turn(a: Point2d, b: Point2d, c: Point2d) -> bool {
     let v1: Vector2D = b - a;
-    let v2: Vector2D = c - b;
+    let v2: Vector2D = c - a;
 
-    return approx_less(v1.cross(&v2), 0f32, 0.001);
+    return approx_less(v1.cross(&v2), 0f32, 0.000001);
 }
 
 pub fn convex_hull(points: &mut Vec<Point2d>) -> Option<Polygon2D> {
@@ -44,7 +44,7 @@ pub fn convex_hull(points: &mut Vec<Point2d>) -> Option<Polygon2D> {
     l_lower.push(points.from_last(0));
     l_lower.push(points.from_last(1));
 
-    for i in points.len() - 2..0 {
+    for i in points.len() - 3..0 {
         l_lower.push(points[i]);
 
         while l_lower.len() > 2 {
@@ -63,9 +63,9 @@ pub fn convex_hull(points: &mut Vec<Point2d>) -> Option<Polygon2D> {
     l_lower.remove(l_lower.len() - 1);
     l_lower.remove(0);
 
-    l_lower.append(&mut l_upper);
+    l_upper.append(&mut l_lower);
 
-    return Some(Polygon2D { points: l_lower });
+    return Some(Polygon2D { points: l_upper });
 }
 
 #[cfg(test)]
@@ -104,6 +104,21 @@ mod tests {
         let pc: Point2d = Point2d { x: 10f32, y: 20f32 };
 
         assert!(right_turn(pa, pb, pc));
+    }
+
+    #[test]
+    fn test_right_turn_line() {
+        let pa: Point2d = Point2d { x: 75f32, y: 75f32 };
+        let pb: Point2d = Point2d {
+            x: 100f32,
+            y: 100f32,
+        };
+        let pc: Point2d = Point2d {
+            x: 125f32,
+            y: 125f32,
+        };
+
+        assert!(!right_turn(pa, pb, pc));
     }
 
     #[test]
