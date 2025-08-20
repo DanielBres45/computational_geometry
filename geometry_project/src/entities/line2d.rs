@@ -1,11 +1,16 @@
 use core::fmt;
-use std::ops::Mul;
+use std::{f32, ops::Mul};
 
-use crate::entities::point2d::Point2d;
+use serde::{Deserialize, Serialize};
+
+use crate::{
+    entities::point2d::Point2d,
+    numerics::{approx_equatable::ApproxEquals, approx_partial_order::ApproxPartialOrder},
+};
 
 use super::affine_matrix2d::{Column, Matrix2D};
 
-#[derive(Debug, Clone, Copy)]
+#[derive(Debug, Clone, Copy, Serialize, Deserialize)]
 pub struct Line2D {
     pub start: Point2d,
     pub end: Point2d,
@@ -43,6 +48,13 @@ impl Line2D {
         Line2D { start, end }
     }
 
+    pub fn nan() -> Line2D {
+        Line2D {
+            start: Point2d::nan(),
+            end: Point2d::nan(),
+        }
+    }
+
     pub fn new_flat(x1: f32, y1: f32, x2: f32, y2: f32) -> Self {
         Line2D {
             start: Point2d { x: x1, y: y1 },
@@ -72,18 +84,60 @@ impl Line2D {
     pub fn is_nan(&self) -> bool {
         self.start.is_nan() || self.end.is_nan()
     }
+
+    ///See stack overflow post https://stackoverflow.com/questions/563198/how-do-you-detect-where-two-line-segments-intersect
+    pub fn intersect(&self, other: &Line2D, epsilon: f32) -> Option<Point2d> {
+        if self.is_nan() || other.is_nan() {
+            return None;
+        }
+
+        if self.len().approx_equals(&0f32, epsilon) || other.len().approx_equals(&0f32, epsilon) {
+            return None;
+        }
+
+        let s1_x: f32 = self.end.x - self.start.x;
+        let s1_y: f32 = self.end.y - self.start.y;
+
+        let s2_x: f32 = other.end.x - other.start.x;
+        let s2_y: f32 = other.end.y - other.start.y;
+
+        let s: f32 = (-s1_y * (self.start.x - other.start.x)
+            + s1_x * (self.start.y - other.start.y))
+            / (-s2_x * s1_y + s1_x * s2_y);
+
+        let t: f32 = (s2_x * (self.start.y - other.start.y)
+            - s2_y * (self.start.x - other.start.x))
+            / (-s2_x * s1_y + s1_x * s2_y);
+
+        if s.approx_equals_or_greater_than(&0f32, f32::EPSILON)
+            && s.approx_equals_or_less_than(&1f32, f32::EPSILON)
+            && t.approx_equals_or_greater_than(&0f32, f32::EPSILON)
+            && t.approx_equals_or_less_than(&1f32, f32::EPSILON)
+        {
+            return Some(Point2d::new(
+                self.start.x + (t * s1_x),
+                self.start.y + (t * s1_y),
+            ));
+        }
+
+        return None;
+    }
 }
 
 #[cfg(test)]
 mod tests {
+    use std::f32;
+
     use super::*;
+
+    const EPSILON: f32 = f32::EPSILON;
 
     #[test]
     fn test_approx_equal_1() {
         let a: Line2D = Line2D::new_flat(0f32, 0f32, 10f32, 10f32);
         let b: Line2D = Line2D::new_flat(0f32, 0f32, 10f32, 10f32);
 
-        assert!(a.approx_equals(&b, f32::EPSILON));
+        assert!(a.approx_equals(&b, EPSILON));
     }
 
     #[test]
@@ -91,6 +145,41 @@ mod tests {
         let a: Line2D = Line2D::new_flat(0f32, 0f32, 10f32, 10f32);
         let b: Line2D = Line2D::new_flat(10f32, 10f32, 0f32, 0f32);
 
-        assert!(a.approx_equals(&b, f32::EPSILON));
+        assert!(a.approx_equals(&b, EPSILON));
+    }
+
+    fn intersection_string(maybe_point: Option<Point2d>) -> String {
+        maybe_point.map_or_else(|| "None".to_string(), |p| format!("{}", p))
+    }
+
+    #[test]
+    fn test_intersect_1() {
+        let a: Line2D = Line2D::new_flat(0f32, 0f32, 10f32, 10f32);
+        let b: Line2D = Line2D::new_flat(5f32, 5f32, 5f32, -5f32);
+
+        let expected: Point2d = Point2d::new(5f32, 5f32);
+
+        let intersect: Option<Point2d> = a.intersect(&b, EPSILON);
+
+        assert!(
+            intersect.is_some_and(|p| p.approx_equals(&expected, EPSILON)),
+            "Expected intersection was (5,0) but actual was {}",
+            intersection_string(intersect)
+        );
+    }
+
+    #[test]
+    fn test_intersect_2() {
+        let a: Line2D = Line2D::new_flat(0f32, 0f32, 0f32, 10f32);
+        let b: Line2D = Line2D::new_flat(0f32, 10f32, 10f32, 10f32);
+
+        let expected: Point2d = Point2d::new(0f32, 10f32);
+        let intersection: Option<Point2d> = a.intersect(&b, EPSILON);
+
+        assert!(
+            intersection.is_some_and(|p| p.approx_equals(&expected, EPSILON)),
+            "Expected intersection was (0,0) but actual was {}",
+            intersection_string(intersection)
+        );
     }
 }

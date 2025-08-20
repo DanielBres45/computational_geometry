@@ -4,21 +4,28 @@ pub mod entities;
 pub mod extensions;
 pub mod numerics;
 mod scenarios;
+pub mod scene_logger;
 mod testing_tools;
 
 use ctrlc::set_handler;
 use data_structures::vec2d::Vec2D;
-use display::{camera::Camera, rgb::RGB, scenario::IScenario};
+use display::{camera::Camera, rgb::RGB, scenario::Scenario};
 use entities::{line2d::Line2D, point2d::Point2d, rectangle2d::Rectangle2D};
 use log::{log, Level, Log};
+use log_statement::def_log;
 use logging::flush;
 use logging::logger::logger::LoggingManager;
 use minifb::{Key, Window, WindowOptions};
-use scenarios::{convex_hull_scenario::ConvexHullScenario, right_turn_debug::RightTurnDebug};
+use scenarios::{
+    convex_hull_scenario::ConvexHullScenario, line_intersection_scenario::LineIntersectionScenario,
+    right_turn_debug::RightTurnDebug,
+};
 use std::time::Duration;
 
 pub const WINDOW_WIDTH: usize = 512;
 pub const WINDOW_HEIGHT: usize = 512;
+
+def_log!(Debug);
 
 fn main() {
     LoggingManager::init("log_output.txt").expect("Failed to initialize Logger");
@@ -63,7 +70,8 @@ fn window_loop(mut window: Window, mut buffer: Vec2D<RGB>) {
     let min: Point2d = Point2d { x: 25f32, y: 25f32 };
     let max: Point2d = Point2d { x: 75f32, y: 75f32 };
 
-    let scenario: &mut dyn IScenario = &mut ConvexHullScenario::new(10, Rectangle2D { min, max });
+    let scenario: &mut dyn Scenario =
+        &mut LineIntersectionScenario::new(10, Rectangle2D { min, max });
 
     match scenario.initialize() {
         Ok(_) => {}
@@ -77,9 +85,11 @@ fn window_loop(mut window: Window, mut buffer: Vec2D<RGB>) {
     while window.is_open() && !window.is_key_down(Key::Escape) {
         std::thread::sleep(Duration::from_millis(1));
 
+        debug_trace!("next frame");
         scenario.handle_input(&window);
 
         if scenario.redraw() {
+            debug_trace!("Redraw scenario");
             camera.clear();
             buffer = blank_screen();
             scenario.process(&mut camera);

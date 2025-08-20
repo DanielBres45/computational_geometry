@@ -1,10 +1,10 @@
-use crate::entities::{point2d::Point2d, rectangle2d::Rectangle2D};
+use crate::entities::{line2d::Line2D, point2d::Point2d, rectangle2d::Rectangle2D};
 use rand::random_range;
 
 pub struct Random2D {}
 
 impl Random2D {
-    pub fn random_point(range: Rectangle2D) -> Point2d {
+    pub fn random_point(range: &Rectangle2D) -> Point2d {
         if range.is_nan() {
             return Point2d::nan();
         }
@@ -15,38 +15,61 @@ impl Random2D {
         Point2d { x, y }
     }
 
-    pub fn random_points(range: Rectangle2D, count: i32) -> RandomPoints {
-        RandomPoints {
+    pub fn random_line(range: &Rectangle2D) -> Line2D {
+        if range.is_nan() {
+            return Line2D::nan();
+        }
+
+        let start: Point2d = Random2D::random_point(range);
+        let end: Point2d = Random2D::random_point(range);
+
+        Line2D::new(start, end)
+    }
+
+    pub fn random_lines(range: Rectangle2D, count: i32) -> RandomEntities<Line2D> {
+        RandomEntities {
             max: count,
             bounds: range,
+            generator: Random2D::random_line as fn(&Rectangle2D) -> Line2D,
+        }
+    }
+
+    pub fn random_points(range: Rectangle2D, count: i32) -> RandomEntities<Point2d> {
+        RandomEntities {
+            max: count,
+            bounds: range,
+            generator: Random2D::random_point as fn(&Rectangle2D) -> Point2d,
         }
     }
 }
 
-pub struct RandomPoints {
+pub struct RandomEntities<T: Sized> {
     max: i32,
     bounds: Rectangle2D,
+    generator: fn(&Rectangle2D) -> T,
 }
 
-impl IntoIterator for RandomPoints {
-    type Item = Point2d;
-    type IntoIter = RandomPointsIter;
+impl<T: Sized> IntoIterator for RandomEntities<T> {
+    type Item = T;
+    type IntoIter = RandomEntitiesIter<T>;
 
     fn into_iter(self) -> Self::IntoIter {
-        RandomPointsIter {
+        RandomEntitiesIter {
             idx: self.max,
             bounds: self.bounds,
+            generator: self.generator,
         }
     }
 }
 
-pub struct RandomPointsIter {
+pub struct RandomEntitiesIter<T: Sized> {
     idx: i32,
     bounds: Rectangle2D,
+    generator: fn(&Rectangle2D) -> T,
 }
 
-impl Iterator for RandomPointsIter {
-    type Item = Point2d;
+impl<T: Sized> Iterator for RandomEntitiesIter<T> {
+    type Item = T;
 
     fn next(&mut self) -> Option<Self::Item> {
         if self.idx <= 0 {
@@ -54,6 +77,6 @@ impl Iterator for RandomPointsIter {
         }
 
         self.idx -= 1;
-        Some(Random2D::random_point(self.bounds))
+        Some((self.generator)(&self.bounds))
     }
 }

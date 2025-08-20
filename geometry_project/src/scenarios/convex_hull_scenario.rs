@@ -2,7 +2,7 @@ use log_statement::{def_log, def_log_data};
 
 use crate::{
     algorithms::{convex_hull, random_geometry::Random2D},
-    display::scenario::{self, IScenario},
+    display::scenario::{self, Scenario},
     entities::{point2d::Point2d, rectangle2d::Rectangle2D},
 };
 
@@ -14,6 +14,7 @@ pub struct ConvexHullScenario {
 }
 
 def_log!(ConvexHull);
+def_log_data!(ConvexHull);
 
 impl ConvexHullScenario {
     pub fn new(count: usize, rect: Rectangle2D) -> Self {
@@ -30,6 +31,7 @@ impl ConvexHullScenario {
         self.points
             .extend(Random2D::random_points(self.rect, self.count as i32));
 
+        convexhull_log_data!(&self.points);
         convexhull_log!(
             "points: {}",
             serde_json::to_string(&self.points).ok().unwrap()
@@ -39,7 +41,7 @@ impl ConvexHullScenario {
     }
 }
 
-impl IScenario for ConvexHullScenario {
+impl Scenario for ConvexHullScenario {
     fn initialize(&mut self) -> Result<(), &'static str> {
         if self.count == 0 {
             return Err("Count must be greater than 0");

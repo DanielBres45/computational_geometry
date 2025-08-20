@@ -1,6 +1,6 @@
 use crate::{
     algorithms::{self, mixed_increment::MixedIncremenet, random_geometry::Random2D},
-    display::{rgb::RGB, scenario::IScenario},
+    display::{rgb::RGB, scenario::Scenario},
     entities::{line2d::Line2D, point2d::Point2d, rectangle2d::Rectangle2D},
 };
 use log_statement::def_log;
@@ -69,7 +69,7 @@ impl RightTurnDebug {
     }
 }
 
-impl IScenario for RightTurnDebug {
+impl Scenario for RightTurnDebug {
     fn initialize(&mut self) -> Result<(), &'static str> {
         Ok(())
     }

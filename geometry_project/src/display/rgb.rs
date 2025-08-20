@@ -1,4 +1,6 @@
-#[derive(Clone, Copy)]
+use serde::{Deserialize, Serialize};
+
+#[derive(Clone, Copy, Serialize, Deserialize, Debug)]
 pub struct RGB {
     pub value: u32,
 }

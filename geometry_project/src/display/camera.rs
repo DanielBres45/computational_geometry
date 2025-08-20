@@ -144,6 +144,12 @@ impl Camera {
         self.points.push(point);
     }
 
+    pub fn set_point_color(&mut self, color: RGB) {
+        for _ in 0..self.points.len() {
+            self.point_colors.push(color.clone());
+        }
+    }
+
     pub fn push_points<T>(&mut self, points: T)
     where
         T: IntoIterator<Item = Point2d>,

@@ -1,7 +1,7 @@
 use crate::Camera;
 use minifb::Window;
 
-pub trait IScenario {
+pub trait Scenario {
     fn initialize(&mut self) -> Result<(), &'static str>;
 
     fn handle_input(&mut self, window: &Window);

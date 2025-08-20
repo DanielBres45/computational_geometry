@@ -5,7 +5,7 @@ edition = "2021"
 
 [dependencies]
 minifb = "0.25.0"
-log_statement = { path = "../AOPLogger/log_statement" }
+log_statement = { path = "../AOPLogger/log_statement", features = ["Scene"] }
 time_attribute = { path = "../AOPLogger/time_attribute" }
 logging = { path = "../AOPLogger/logging", features = ["Debug"] }
 data_structures = { path = "../MemoryMapping/data_structures"}
@@ -19,9 +19,12 @@ itertools = "0.14.0"
 ctrlc = "3.4.7"
 
 [features]
-default = ["Camera", "RightTurnDebug"]
+default = ["Camera", "Algorithms", "LineIntersection", "Scene"]
 Camera = ["Debug"]
 Debug = []
 Trace = []
 ConvexHull = ["Debug"]
 RightTurnDebug = ["Debug"]
+Algorithms = ["Debug"]
+Scene = []
+LineIntersection = []

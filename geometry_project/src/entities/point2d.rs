@@ -1,4 +1,8 @@
-use crate::{entities::affine_matrix2d::Column, numerics::floating_comparisons::approx_equal};
+use crate::{
+    display::{scene::Scene, scene_proxy::ISceneProxy},
+    entities::affine_matrix2d::Column,
+    numerics::floating_comparisons::approx_equal,
+};
 use core::f32;
 use serde::{Deserialize, Serialize};
 use std::{
@@ -17,6 +21,15 @@ pub struct Point2d {
 impl fmt::Display for Point2d {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         write!(f, "({}, {})", self.x, self.y)
+    }
+}
+
+impl ISceneProxy for Point2d {
+    fn get_scene(&self) -> crate::display::scene::Scene {
+        let mut scene = Scene::new();
+        scene.push_point(self.clone());
+
+        scene
     }
 }
 
@@ -61,6 +74,10 @@ impl Mul<Matrix2D> for Point2d {
 impl Point2d {
     pub fn origin() -> Self {
         Point2d { x: 0f32, y: 0f32 }
+    }
+
+    pub fn new(x: f32, y: f32) -> Self {
+        Point2d { x, y }
     }
 
     pub fn nan() -> Self {

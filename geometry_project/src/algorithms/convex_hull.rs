@@ -1,10 +1,31 @@
-use std::{cmp::Ordering, f32};
+use log::logger;
 
 use crate::{
+    display::{scene::Scene, scene_proxy::ISceneProxy},
     entities::{point2d::Point2d, polygon2d::Polygon2D, vect2d::Vector2D},
     extensions::vec_extensions::{VecExtensions, VecPointExtesions},
     numerics::floating_comparisons::{approx_greater, approx_less},
+    scene_logger::scene_logger::SceneLogger,
 };
+
+use std::sync::OnceLock;
+
+static LOGGER: OnceLock<SceneLogger> = OnceLock::new();
+
+fn get_logger() -> &'static SceneLogger {
+    LOGGER.get_or_init(|| SceneLogger::new("Algorithms", true))
+}
+
+fn log_scene<T>(proxy: &T)
+where
+    T: ISceneProxy,
+{
+    #[cfg(feature = "Algorithms")]
+    {
+        let logger = get_logger();
+        logger.log_scene_proxy(proxy);
+    }
+}
 
 pub fn right_turn(a: Point2d, b: Point2d, c: Point2d) -> bool {
     let v1: Vector2D = b - a;
@@ -40,12 +61,18 @@ pub fn convex_hull(points: &mut Vec<Point2d>) -> Option<Polygon2D> {
         }
     }
 
+    log_scene(&l_upper);
+
     let mut l_lower: Vec<Point2d> = Vec::new();
     l_lower.push(points.from_last(0));
     l_lower.push(points.from_last(1));
 
-    for i in points.len() - 3..0 {
+    log_scene(&l_lower);
+
+    for i in (0..points.len() - 3).rev() {
         l_lower.push(points[i]);
+
+        log_scene(&l_lower);
 
         while l_lower.len() > 2 {
             if right_turn(
@@ -62,6 +89,8 @@ pub fn convex_hull(points: &mut Vec<Point2d>) -> Option<Polygon2D> {
 
     l_lower.remove(l_lower.len() - 1);
     l_lower.remove(0);
+
+    log_scene(&l_lower);
 
     l_upper.append(&mut l_lower);
 
