@@ -18,7 +18,8 @@ pub struct LineIntersectionScenario {
     new_pts: bool,
 }
 
-def_log!(LineIntersection);
+const LOGGING_ENABLED: bool = true;
+def_log!(LineIntersection, LOGGING_ENABLED);
 
 const SCENARIO_FILE: &'static str = "line_intersection_scenario.txt";
 
@@ -50,7 +51,7 @@ impl LineIntersectionScenario {
         self.lines
             .extend(Random2D::random_lines(self.rect, self.count as i32));
 
-        lineintersection_scene!(|| -> Scene { Scene::from_lines(self.lines) });
+        lineintersection_log!("{:?}", || Scene::from(&self.lines));
 
         self.new_pts = true;
     }

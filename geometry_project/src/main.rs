@@ -11,7 +11,7 @@ use ctrlc::set_handler;
 use data_structures::vec2d::Vec2D;
 use display::{camera::Camera, rgb::RGB, scenario::Scenario};
 use entities::{line2d::Line2D, point2d::Point2d, rectangle2d::Rectangle2D};
-use log::{log, Level, Log};
+use log::{log, Level, Log, trace};
 use log_statement::def_log;
 use logging::flush;
 use logging::logger::logger::LoggingManager;
@@ -24,8 +24,6 @@ use std::time::Duration;
 
 pub const WINDOW_WIDTH: usize = 512;
 pub const WINDOW_HEIGHT: usize = 512;
-
-def_log!(Debug);
 
 fn main() {
     LoggingManager::init("log_output.txt").expect("Failed to initialize Logger");
@@ -85,11 +83,11 @@ fn window_loop(mut window: Window, mut buffer: Vec2D<RGB>) {
     while window.is_open() && !window.is_key_down(Key::Escape) {
         std::thread::sleep(Duration::from_millis(1));
 
-        debug_trace!("next frame");
+        trace!("next frame");
         scenario.handle_input(&window);
 
         if scenario.redraw() {
-            debug_trace!("Redraw scenario");
+            trace!("Redraw scenario");
             camera.clear();
             buffer = blank_screen();
             scenario.process(&mut camera);

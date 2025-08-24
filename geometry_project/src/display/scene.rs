@@ -11,6 +11,17 @@ pub struct Scene {
     pub line_colors: Vec<RGB>,
 }
 
+impl From<&Vec<Line2D>> for Scene{
+    fn from(value: &Vec<Line2D>) -> Self {
+        Scene {
+            points: Vec::new(),
+            lines: value.clone(),
+            point_colors: Vec::new(),
+            line_colors: Vec::new()
+        }
+    }
+}
+
 impl Scene {
     pub fn new() -> Self {
         Scene {

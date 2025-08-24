@@ -13,7 +13,8 @@ pub struct RightTurnDebug {
     redraw: bool,
 }
 
-def_log!(RightTurnDebug);
+const LOGGING_ENABLED: bool = false;
+def_log!(RightTurnDebug, LOGGING_ENABLED);
 
 impl RightTurnDebug {
     pub fn new(count: usize, rect: Rectangle2D) -> Self {
