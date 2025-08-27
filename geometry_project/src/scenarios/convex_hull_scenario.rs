@@ -58,6 +58,7 @@ impl Scenario for ConvexHullScenario {
             convex_hull::convex_hull(&mut self.points).unwrap_or_else(|| panic!("Uhm didnt work"));
 
         camera.push_points(self.points.clone());
+        camera.set_point_size(3);
 
         camera.push_polygon(polygon);
     }

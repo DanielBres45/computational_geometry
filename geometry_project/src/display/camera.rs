@@ -1,4 +1,4 @@
-use core::panic;
+use core::{f32, panic};
 
 use crate::display::rgb::RGB;
 use crate::entities::affine_matrix2d::Matrix2D;
@@ -8,21 +8,25 @@ use crate::entities::rectangle2d::Rectangle2D;
 use crate::entities::vect2d::Vector2D;
 use crate::entities::{line2d::Line2D, point2d::Point2d};
 use crate::numerics::floating_comparisons::approx_equal;
-
-use log_statement::def_log;
-
 use data_structures::vec2d::Vec2D;
+use log_statement::def_log;
 use memory_math::memory_index2d::MemIndex2D;
+use memory_math::memory_line::MemLine2D;
 
 use super::bresnehem::BresnehemIter;
 
+//TODO: Implement point size = points into squares
 pub struct Camera {
     pub view_port: Rectangle2D,
     points: Vec<Point2d>,
     lines: Vec<Line2D>,
     point_colors: Vec<RGB>,
     line_colors: Vec<RGB>,
+    point_size: u8
 }
+
+const LOGGING_ENABLED: bool = false;
+def_log!(Camera, LOGGING_ENABLED);
 
 impl Camera {
     pub fn new(width: f32, height: f32) -> Self {
@@ -32,6 +36,7 @@ impl Camera {
             lines: Vec::new(),
             point_colors: Vec::new(),
             line_colors: Vec::new(),
+            point_size: 1
         }
     }
 
@@ -63,9 +68,32 @@ impl Camera {
     }
 
     fn draw_line(&self, line: Line2D, color: RGB, canvas: &mut Vec2D<RGB>) {
-        let iter: BresnehemIter = line.into();
 
-        for point in iter {
+        camera_log!("Plotting Line {:?}", line);
+        let min: MemIndex2D;
+        if let Ok(m) = MemIndex2D::try_from(Into::<(f32, f32)>::into(line.start))
+        {
+            min = m;
+        }
+        else {
+            camera_log!("Could not plot line {:?}", line);
+            return;
+        }
+
+        let max: MemIndex2D;
+        if let Ok(m) = MemIndex2D::try_from(Into::<(f32, f32)>::into(line.end))
+        {
+            max = m;
+        }
+        else {
+            camera_log!("Could not plot line {:?}", line);
+            return;
+        }
+
+        let indexes: Vec<MemIndex2D> = MemLine2D::new(min, max).line_indexes();
+
+        camera_log!("Plotting line indexes: {:?}", indexes);
+        for point in indexes {
             if canvas.index2d_in_bounds(point) {
                 canvas[point] = color;
             }
@@ -73,7 +101,7 @@ impl Camera {
     }
 
     fn draw_lines(&self, canvas: &mut Vec2D<RGB>, skew: Matrix2D) {
-        //println!("draw lines");
+        camera_log!("Drawing lines: {:?}", || &self.lines);
 
         let mut idx: usize = 0;
         for line in &self.lines {
@@ -81,21 +109,15 @@ impl Camera {
             let clipped: Line2D = match self.clip_line(line.to_owned()) {
                 Some(l) => l,
                 None => {
-                    //camera_log!("not in view!");
                     continue;
                 }
             };
 
-            //println!("Line after clipping: {}", clipped);
-
             if approx_equal(clipped.len(), 0f32, f32::EPSILON) {
-                //camera_log!("0 length line. skipping");
                 continue;
             }
 
             let scaled_line: Line2D = clipped * skew;
-
-            //println!("Line after skew: {}", scaled_line);
 
             let color: RGB = match self.line_colors.len() > idx {
                 true => self.line_colors[idx],
@@ -107,7 +129,50 @@ impl Camera {
         }
     }
 
+    fn draw_points(&self, canvas: &mut Vec2D<RGB>, skew: Matrix2D)
+    {
+        camera_log!("Drawing points: {:?}", || &self.points);
+        for i in 0..self.points.len(){
+
+            if !self.view_port.contains_closed(&self.points[i], f32::EPSILON)
+            {
+                continue;
+            }
+
+            let color: RGB = match i < self.point_colors.len()
+            {
+                true => self.point_colors[i].clone(),
+                false => RGB::white()
+            };
+
+            let normalized: Point2d = self.points[i].clone() * skew;
+
+            if self.point_size == 1
+            {
+                canvas[Self::point_into_index(normalized)] = color;
+                continue;
+            }
+
+            let coord: MemIndex2D = Self::point_into_index(normalized);
+            let row_min: usize = coord.row.checked_sub((self.point_size / 2) as usize).unwrap_or(0);
+            let col_min: usize = coord.col.checked_sub((self.point_size / 2) as usize).unwrap_or(0);
+
+            let row_max: usize = usize::min(canvas.height(), coord.row + (self.point_size - self.point_size / 2) as usize);
+            let col_max: usize = usize::min(canvas.width(), coord.col + (self.point_size - self.point_size / 2) as usize);
+        
+            for row in row_min..row_max
+            {
+                for col in col_min..col_max
+                {
+                    canvas[MemIndex2D::new(row, col)] = color;
+                }
+            }
+        }
+    }
+
     pub fn draw(&self, canvas: &mut Vec2D<RGB>) {
+        camera_log!("Starting draw");
+        
         let scale: Vector2D = Vector2D {
             x: canvas.width() as f32 / self.view_port.width(),
             y: canvas.height() as f32 / self.view_port.height(),
@@ -117,15 +182,15 @@ impl Camera {
 
         let skew: Matrix2D = Matrix2D::skew(translate, scale);
 
-        for point in &self.points {
-            if self.view_port.contains_closed(point.clone(), f32::EPSILON) {
-                let normalized: Point2d = point.clone() * skew;
-
-                canvas[Self::point_into_index(normalized)] = RGB::white();
-            }
-        }
+        camera_log!("Skew, {:?}", || skew);
 
         self.draw_lines(canvas, skew);
+        self.draw_points(canvas, skew);
+    }
+
+    pub fn set_point_size(&mut self, point_size: u8)
+    {
+        self.point_size = point_size;
     }
 
     pub fn push_polygon(&mut self, polygon: Polygon2D) {

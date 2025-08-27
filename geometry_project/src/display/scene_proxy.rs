@@ -12,3 +12,4 @@ impl ISceneProxy for Vec<Point2d> {
         scene
     }
 }
+

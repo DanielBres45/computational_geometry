@@ -53,7 +53,7 @@ impl Rectangle2D {
             && approx_less(point.y, self.max.y, epsilon);
     }
 
-    pub fn contains_closed(&self, point: Point2d, epsilon: f32) -> bool {
+    pub fn contains_closed(&self, point: &Point2d, epsilon: f32) -> bool {
         approx_equal_greater(point.x, self.min.x, epsilon)
             && approx_equal_greater(point.y, self.min.y, epsilon)
             && approx_equal_less(point.y, self.max.y, epsilon)

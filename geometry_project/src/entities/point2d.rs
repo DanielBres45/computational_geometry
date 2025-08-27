@@ -18,6 +18,13 @@ pub struct Point2d {
     pub y: f32,
 }
 
+impl Into<(f32, f32)> for Point2d
+{
+    fn into(self) -> (f32, f32) {
+        (self.x, self.y)
+    }
+}
+
 impl fmt::Display for Point2d {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         write!(f, "({}, {})", self.x, self.y)

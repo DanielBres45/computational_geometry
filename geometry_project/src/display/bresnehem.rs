@@ -1,3 +1,5 @@
+use std::fmt::Debug;
+
 use memory_math::memory_index2d::MemIndex2D;
 
 use crate::{
@@ -14,6 +16,13 @@ pub struct BresnehemIter {
     sx: f32,
     sy: f32,
     error: f32,
+}
+
+impl Debug for BresnehemIter
+{
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        f.debug_struct("BresnehemIter").field("start", &self.start).field("end", &self.end).field("dx", &self.dx).field("dy", &self.dy).field("sx", &self.sx).field("sy", &self.sy).field("error", &self.error).finish()
+    }
 }
 
 impl From<Line2D> for BresnehemIter {
@@ -52,6 +61,7 @@ impl Iterator for BresnehemIter {
             return None;
         }
 
+        //println!("{:?}", &self);
         //println!("point: {}", self.start);
 
         let value: Option<MemIndex2D> = Some(MemIndex2D::new(
@@ -59,13 +69,13 @@ impl Iterator for BresnehemIter {
             self.start.x as usize,
         ));
 
-        if self.start.approx_equals(&self.end, 0.001) {
+        if self.start.approx_equals(&self.end, 0.1) {
             self.start = Point2d::nan();
             return value;
         }
 
         if 2f32 * self.error >= self.dy {
-            if approx_equal(self.start.x, self.end.x, 0.001) {
+            if approx_equal(self.start.x, self.end.x, 0.1) {
                 self.start = Point2d::nan();
                 return value;
             }
@@ -78,7 +88,7 @@ impl Iterator for BresnehemIter {
         }
 
         if 2f32 * self.error <= self.dx {
-            if approx_equal(self.end.y, self.start.y, 0.001) {
+            if approx_equal(self.end.y, self.start.y, 0.1) {
                 self.start = Point2d::nan();
                 return value;
             }
@@ -158,6 +168,22 @@ mod tests {
         for mem_index in iter {
             println!("index: {}", mem_index);
             assert_ne!(MemIndex2D { row: 0, col: 0 }, mem_index);
+        }
+    }
+
+    #[test]
+    fn test_specific() {
+        let line: Line2D = Line2D { start: Point2d { x: 41.734604, y: 30.496841 }, end: Point2d { x: 52.04078, y: 27.98661 } }; 
+        let iter: BresnehemIter = line.into();
+
+        let mut idx: usize = 0;
+        for mem_index in iter
+        {
+            println!("Index: {}", mem_index);
+            assert!(
+                idx < 30 as usize
+            );
+            idx += 1;
         }
     }
 }

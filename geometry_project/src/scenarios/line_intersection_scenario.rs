@@ -2,7 +2,7 @@ use std::f32;
 
 use crate::{
     algorithms::{self, random_geometry::Random2D},
-    display::{rgb::RGB, scenario::Scenario, scene::Scene},
+    display::{rgb::RGB, scenario::Scenario, scene::Scene, camera::Camera},
     entities::{line2d::Line2D, point2d::Point2d, rectangle2d::Rectangle2D},
 };
 
@@ -31,6 +31,10 @@ impl LineIntersectionScenario {
             lines: Vec::with_capacity(count),
             new_pts: true,
         }
+    }
+
+    pub fn new_specific(lines: Vec<Line2D>, rect: Rectangle2D) -> Self {
+        LineIntersectionScenario { count: lines.len(), rect, lines, new_pts: true }
     }
 
     fn save_scenario(&mut self) {
@@ -85,7 +89,12 @@ impl Scenario for LineIntersectionScenario {
         let intersections =
             algorithms::line_intersection::naive_line_intersection(&self.lines, f32::EPSILON);
 
+        //println!("Points: {:?}", &intersections);
+        //println!("Lines: {:?}", &self.lines);
+
         camera.push_points(intersections);
+        camera.set_point_size(4);
+
         camera.set_point_color(RGB::green());
         camera.push_lines(self.lines.clone());
     }
