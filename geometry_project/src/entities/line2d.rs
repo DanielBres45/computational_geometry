@@ -4,7 +4,7 @@ use std::{f32, ops::Mul};
 use serde::{Deserialize, Serialize};
 
 use crate::{
-    entities::point2d::Point2d,
+    entities::{point2d::Point2d, vect2d::Vector2D},
     numerics::{approx_equatable::ApproxEquals, approx_partial_order::ApproxPartialOrder},
 };
 
@@ -14,6 +14,24 @@ use super::affine_matrix2d::{Column, Matrix2D};
 pub struct Line2D {
     pub start: Point2d,
     pub end: Point2d,
+}
+
+#[repr(transparent)]
+#[derive(Debug, Clone, Copy)]
+pub struct ParametricLine2D(pub Line2D);
+
+impl From<Line2D> for ParametricLine2D {
+    fn from(value: Line2D) -> Self {
+        Self(value)
+    }
+}
+
+impl fmt::Display for ParametricLine2D {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        write!(f, "({} + t*{}, {} + t*{})", 
+        self.0.start.x, self.0.direction().x,
+        self.0.start.y, self.0.direction().y)
+    }
 }
 
 impl PartialEq for Line2D {
@@ -55,6 +73,16 @@ impl Line2D {
         }
     }
 
+    pub fn direction(&self) -> Vector2D
+    {
+        &self.end - &self.start
+    }
+
+    pub fn reverse(&self) -> Self
+    {
+        Line2D { start: self.end, end: self.start }
+    }
+
     pub fn new_flat(x1: f32, y1: f32, x2: f32, y2: f32) -> Self {
         Line2D {
             start: Point2d { x: x1, y: y1 },
@@ -85,6 +113,19 @@ impl Line2D {
         self.start.is_nan() || self.end.is_nan()
     }
 
+    pub fn is_finite(&self) -> bool {
+        !self.is_nan()
+        && self.start.is_finite()
+        && self.end.is_finite()
+    }
+
+    pub fn intersects_point(&self, point: Point2d, epsilon: f32) -> bool {
+        let dp = point - self.start;
+        let lp = self.end - self.start;
+
+        dp.cross(&lp).approx_equals(&0f32, epsilon)
+    }
+
     ///See stack overflow post https://stackoverflow.com/questions/563198/how-do-you-detect-where-two-line-segments-intersect
     pub fn intersect(&self, other: &Line2D, epsilon: f32) -> Option<Point2d> {
         if self.is_nan() || other.is_nan() {
@@ -109,10 +150,10 @@ impl Line2D {
             - s2_y * (self.start.x - other.start.x))
             / (-s2_x * s1_y + s1_x * s2_y);
 
-        if s.approx_equals_or_greater_than(&0f32, f32::EPSILON)
-            && s.approx_equals_or_less_than(&1f32, f32::EPSILON)
-            && t.approx_equals_or_greater_than(&0f32, f32::EPSILON)
-            && t.approx_equals_or_less_than(&1f32, f32::EPSILON)
+        if s.approx_equals_or_greater_than(&0f32, epsilon)
+            && s.approx_equals_or_less_than(&1f32, epsilon)
+            && t.approx_equals_or_greater_than(&0f32, epsilon)
+            && t.approx_equals_or_less_than(&1f32, epsilon)
         {
             return Some(Point2d::new(
                 self.start.x + (t * s1_x),

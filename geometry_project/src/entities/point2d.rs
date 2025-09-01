@@ -69,6 +69,17 @@ impl Sub<Point2d> for Point2d {
     }
 }
 
+impl Sub<&Point2d> for &Point2d {
+    type Output = Vector2D;
+
+    fn sub(self, rhs: &Point2d) -> Self::Output {
+        Vector2D {
+            x: self.x - rhs.x,
+            y: self.y - rhs.y,
+        }
+    }
+}
+
 impl Mul<Matrix2D> for Point2d {
     type Output = Point2d;
 
@@ -100,5 +111,11 @@ impl Point2d {
 
     pub fn is_nan(&self) -> bool {
         self.x.is_nan() || self.y.is_nan()
+    }
+
+    pub fn is_finite(&self) -> bool {
+        !self.is_nan()
+        && self.x.is_finite()
+        && self.y.is_finite()
     }
 }

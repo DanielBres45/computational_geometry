@@ -68,20 +68,9 @@ fn window_loop(mut window: Window, mut buffer: Vec2D<RGB>) {
     let min: Point2d = Point2d { x: 25f32, y: 25f32 };
     let max: Point2d = Point2d { x: 75f32, y: 75f32 };
 
-    let specific_scenario: Vec<Line2D> = 
-    vec![Line2D { start: Point2d { x: 73.470276, y: 64.859955 }, end: Point2d { x: 46.834213, y: 38.314342 } }, 
-    Line2D { start: Point2d { x: 62.55593, y: 73.8566 }, end: Point2d { x: 54.35093, y: 58.3027 } }, 
-    Line2D { start: Point2d { x: 27.983957, y: 52.657627 }, end: Point2d { x: 45.616966, y: 26.074202 } }, 
-    Line2D { start: Point2d { x: 57.50478, y: 34.425934 }, end: Point2d { x: 50.000343, y: 34.431786 } }, 
-    Line2D { start: Point2d { x: 56.74343, y: 49.15623 }, end: Point2d { x: 39.79673, y: 46.38095 } }, 
-    Line2D { start: Point2d { x: 56.412815, y: 32.000595 }, end: Point2d { x: 27.73239, y: 61.217308 } }, 
-    Line2D { start: Point2d { x: 29.940807, y: 59.32866 }, end: Point2d { x: 57.583504, y: 49.419746 } }, 
-    Line2D { start: Point2d { x: 73.244606, y: 28.111584 }, end: Point2d { x: 71.43653, y: 29.928463 } }, 
-    Line2D { start: Point2d { x: 62.15374, y: 72.334 }, end: Point2d { x: 28.37599, y: 51.491726 } }, 
-    Line2D { start: Point2d { x: 68.03107, y: 42.681534 }, end: Point2d { x: 66.35208, y: 45.307434 } }];
-
     let scenario: &mut dyn Scenario =
-         &mut LineIntersectionScenario::new_specific(specific_scenario, Rectangle2D { min, max });
+         &mut LineIntersectionScenario::new(10, Rectangle2D { min, max })
+         .round_points();
 
     //let scenario: &mut dyn Scenario = &mut ConvexHullScenario::new(10, Rectangle2D { min, max });
 

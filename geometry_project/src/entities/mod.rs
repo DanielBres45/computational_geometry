@@ -5,3 +5,5 @@ pub mod point2d;
 pub mod polygon2d;
 pub mod rectangle2d;
 pub mod vect2d;
+pub mod lexicographic2d;
+pub mod angle;
