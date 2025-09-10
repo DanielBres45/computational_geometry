@@ -2,7 +2,7 @@ use std::f32;
 
 use crate::{
     algorithms::{self, random_geometry::Random2D},
-    display::{camera::Camera, rgb::RGB, scenario::Scenario, scene::Scene},
+    display::{camera::Camera, hsv::HSV, rgb::RGB, scenario::Scenario, scene::Scene},
     entities::{line2d::{Line2D, ParametricLine2D}, point2d::Point2d, rectangle2d::Rectangle2D},
 };
 
@@ -35,6 +35,27 @@ impl LineIntersectionScenario {
         }
     }
 
+    pub fn new_first_intersection(count: usize, rect: Rectangle2D) -> Self {
+        if count < 1
+        {
+            panic!("Count should be greater than 1");
+        }
+
+        let mut inst: LineIntersectionScenario = LineIntersectionScenario::new(count, rect);
+        inst.random_lines();
+
+        loop {
+            if inst.intersections().len() > 0
+            {
+                break;
+            }
+
+            inst.random_lines();
+        }
+
+        inst
+    }
+
     pub fn round_points(mut self) -> Self {
         self.round_points = true;
         return self;
@@ -57,6 +78,11 @@ impl LineIntersectionScenario {
         self.new_pts = true;
     }
 
+    pub fn intersections(&self) -> Vec<(Point2d, Line2D, Line2D)>
+    {
+        algorithms::line_intersection::naive_line_intersection_with_lines(&self.lines, f32::EPSILON)
+    }
+
     fn random_lines(&mut self) {
         self.lines.clear();
 
@@ -68,7 +94,6 @@ impl LineIntersectionScenario {
             self.lines.extend(Random2D::random_lines(self.rect, self.count as i32));
         }
         
-
         lineintersection_log!("{:?}", || Scene::from(&self.lines));
 
         self.new_pts = true;
@@ -100,8 +125,7 @@ impl Scenario for LineIntersectionScenario {
     }
 
     fn process(&mut self, camera: &mut crate::display::camera::Camera) {
-        let intersections =
-            algorithms::line_intersection::naive_line_intersection_with_lines(&self.lines, f32::EPSILON);
+        let intersections = self.intersections();
         
         camera.set_point_size(4);
 
@@ -112,9 +136,17 @@ impl Scenario for LineIntersectionScenario {
                 t.0.x, t.0.y, ParametricLine2D(t.1), ParametricLine2D(t.2))
             }).collect::<Vec<String>>());
 
-        for (point, segA, segB) in intersections
+        let colors: Vec<RGB> = HSV::random_colors(intersections.len(), 0.8f32, 0.9f32).iter().map(|h| h.to_rgb()).collect();
+        camera.set_point_colors(colors.clone());
+        let mut index: usize = 0;
+        for (point, seg_a, seg_b) in intersections
         {
-            
+            camera.push_point(point);
+            camera.push_line(seg_a);
+            camera.push_line_color(colors[index]);
+            camera.push_line(seg_b);
+            camera.push_line_color(colors[index]);
+            index += 1;
         }
 
         //camera.push_points(intersections.iter().map(|f| -> Point2d { return f.0; }));

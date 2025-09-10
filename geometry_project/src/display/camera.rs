@@ -10,6 +10,7 @@ use crate::entities::{line2d::Line2D, point2d::Point2d};
 use crate::numerics::floating_comparisons::approx_equal;
 use data_structures::vec2d::Vec2D;
 use log_statement::def_log;
+use memory_math::memory_extents2d::MemExtents2D;
 use memory_math::memory_index2d::MemIndex2D;
 use memory_math::memory_line::MemLine2D;
 
@@ -25,7 +26,7 @@ pub struct Camera {
     point_size: u8
 }
 
-const LOGGING_ENABLED: bool = false;
+const LOGGING_ENABLED: bool = true;
 def_log!(Camera, LOGGING_ENABLED);
 
 impl Camera {
@@ -160,6 +161,8 @@ impl Camera {
             let row_max: usize = usize::min(canvas.height(), coord.row + (self.point_size - self.point_size / 2) as usize);
             let col_max: usize = usize::min(canvas.width(), coord.col + (self.point_size - self.point_size / 2) as usize);
         
+            camera_log!("Drawing point as rect {:?}", || MemExtents2D::new_from_usize(row_min, col_min, row_max, col_max));
+
             for row in row_min..row_max
             {
                 for col in col_min..col_max
@@ -220,6 +223,11 @@ impl Camera {
         for point in points {
             self.points.push(point);
         }
+    }
+
+    pub fn set_point_colors(&mut self, point_colors: Vec<RGB>)
+    {
+        self.point_colors = point_colors;
     }
 
     pub fn push_point_colors<T>(&mut self, points_colors: T)

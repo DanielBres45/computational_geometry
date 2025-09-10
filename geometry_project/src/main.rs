@@ -69,7 +69,7 @@ fn window_loop(mut window: Window, mut buffer: Vec2D<RGB>) {
     let max: Point2d = Point2d { x: 75f32, y: 75f32 };
 
     let scenario: &mut dyn Scenario =
-         &mut LineIntersectionScenario::new(10, Rectangle2D { min, max })
+         &mut LineIntersectionScenario::new_first_intersection(2, Rectangle2D { min, max })
          .round_points();
 
     //let scenario: &mut dyn Scenario = &mut ConvexHullScenario::new(10, Rectangle2D { min, max });
@@ -105,7 +105,7 @@ fn window_loop(mut window: Window, mut buffer: Vec2D<RGB>) {
 }
 
 fn buffer_to_window(window: &mut Window, buffer2d: Vec2D<RGB>) {
-    let buffer: Vec<u32> = buffer2d.into_iter().map(|r| r.value).collect();
+    let buffer: Vec<u32> = buffer2d.into_iter().map(|r| r.0).collect();
 
     window.update_with_buffer(buffer.as_slice(), WINDOW_WIDTH, WINDOW_HEIGHT);
 }
